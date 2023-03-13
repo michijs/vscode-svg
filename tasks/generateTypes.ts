@@ -788,7 +788,7 @@ const jsonData: HTMLDataV1 = {
       [],
     ),
     element(
-      "tsapn",
+      "tspan",
       "Defines a subtext within a <text> element or another <tspan> element. It allows for adjustment of the style and/or position of that subtext as needed.",
       [
         attributes.dx,

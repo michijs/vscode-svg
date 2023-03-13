@@ -71955,7 +71955,7 @@
       ]
     },
     {
-      "name": "tsapn",
+      "name": "tspan",
       "description": "Defines a subtext within a <text> element or another <tspan> element. It allows for adjustment of the style and/or position of that subtext as needed.",
       "attributes": [
         {
@@ -74043,7 +74043,7 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tsapn"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tspan"
         }
       ]
     },
