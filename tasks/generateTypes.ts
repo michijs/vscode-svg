@@ -720,6 +720,9 @@ const jsonData: HTMLDataV1 = {
       "svg",
       "The svg element can be used to embed an SVG fragment inside the current document (for example, an HTML document). This SVG fragment has its own viewport and coordinate system.",
       [
+        attribute("xmins", "Specifies the XML Namespace of the document.", [
+          "http://www.w3.org/2000/svg",
+        ]),
         attributes.preserveAspectRatio,
         attributes.width,
         attributes.height,
