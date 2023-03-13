@@ -4,7 +4,7 @@
   "description": "SVG extension for VS Code",
   "author": "Lucas M. Segurado",
   "icon": "media/svg.png",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "publisher": "michijs",
   "repository": "https://github.com/michijs/vscode-svg",
   "files": [
