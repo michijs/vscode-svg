@@ -4,12 +4,19 @@
   "description": "SVG extension for VS Code",
   "author": "Lucas M. Segurado",
   "icon": "media/svg.png",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "publisher": "michijs",
   "repository": "https://github.com/michijs/vscode-svg",
   "files": [
     "dist/"
   ],
+  "galleryBanner": {
+    "color": "#5663da",
+    "theme": "dark"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/michijs"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.38.0"
