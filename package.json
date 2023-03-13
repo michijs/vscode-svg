@@ -1,12 +1,12 @@
 {
-  "name": "vscode-mathml",
-  "displayName": "MathML",
-  "description": "MathML extension for VS Code",
+  "name": "vscode-svg",
+  "displayName": "SVG",
+  "description": "SVG extension for VS Code",
   "author": "Lucas M. Segurado",
-  "icon": "media/mathml.png",
+  "icon": "media/svg.png",
   "version": "0.1.0",
   "publisher": "michijs",
-  "repository": "https://github.com/michijs/vscode-mathml",
+  "repository": "https://github.com/michijs/vscode-svg",
   "files": [
     "dist/"
   ],
@@ -23,11 +23,12 @@
   },
   "keywords": [
     "math",
-    "mathml",
+    "svg",
     "html",
     "typescript"
   ],
   "devDependencies": {
+    "@vscode/web-custom-data": "0.4.5",
     "@vscode/vsce": "2.18.0",
     "lint-staged": "13.1.2",
     "rome": "11.0.0",
@@ -39,7 +40,7 @@
   "contributes": {
     "html": {
       "customData": [
-        "./dist/mathml.json"
+        "./dist/svg.json"
       ]
     }
   },
