@@ -16,3 +16,4 @@ You can install the extension by one of the following ways:
 - We support the elements and attributes specified for version 2 of SVG and remove several attributes that were deprecated and whose use may be detrimental to your product.
 - We do not include references to this package in the element/attribute documentation. So the experience is cleaner.
 - We only add elements / attributes support.
+- We only add events support.
