@@ -1,15 +1,1045 @@
 {
-  "PresentationAttributes": [
+  "AnimationAdditionAttributes": [
     {
-      "name": "transform",
-      "description": "The transform attribute defines a list of transform definitions that are applied to an element and the element's children. The items in the transform list are separated by whitespace and/or commas, and are applied from right to left.",
+      "name": "accumulate",
+      "description": "This attribute controls whether or not the animation is cumulative.",
+      "values": [
+        {
+          "name": "none"
+        },
+        {
+          "name": "sum"
+        }
+      ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/accumulate"
         }
       ]
     },
+    {
+      "name": "additive",
+      "description": "This attribute controls whether or not the animation is additive.",
+      "values": [
+        {
+          "name": "replace"
+        },
+        {
+          "name": "sum"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/additive"
+        }
+      ]
+    }
+  ],
+  "AnimationAttributeTargetAttributes": [
+    {
+      "name": "attributeName",
+      "description": "This attribute indicates the name of the attribute in the parent element that is going to be changed during an animation. ",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeName"
+        }
+      ]
+    },
+    {
+      "name": "attributeType",
+      "description": "This attribute specifies the namespace in which the target attribute and its associated values are defined. ",
+      "values": [
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "XML"
+        },
+        {
+          "name": "auto"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeType"
+        }
+      ]
+    }
+  ],
+  "AnimationTargetElementAttributes": [
+    {
+      "name": "href",
+      "description": "This attribute indicates the name of the attribute in the parent element that is going to be changed during an animation.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href"
+        }
+      ]
+    }
+  ],
+  "AnimationTimingAttributes": [
+    {
+      "name": "begin",
+      "description": "Defines when an animation should begin or when an element should be discarded.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin"
+        }
+      ]
+    },
+    {
+      "name": "dur",
+      "description": "This attribute indicates the simple duration of the animation.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dur"
+        }
+      ]
+    },
+    {
+      "name": "end",
+      "description": "This attribute defines an end value for the animation that can constrain the active duration.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end"
+        }
+      ]
+    },
+    {
+      "name": "fill",
+      "description": "The fill attribute has two meanings based on the context it's used.",
+      "values": [
+        {
+          "name": "remove"
+        },
+        {
+          "name": "freeze"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill"
+        }
+      ]
+    },
+    {
+      "name": "max",
+      "description": "This attribute specifies the maximum value of the active duration. ",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/max"
+        }
+      ]
+    },
+    {
+      "name": "min",
+      "description": "This attribute specifies the minimum value of the active duration.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/min"
+        }
+      ]
+    },
+    {
+      "name": "repeatCount",
+      "description": "This attribute indicates the number of time the animation will take place.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatCount"
+        }
+      ]
+    },
+    {
+      "name": "repeatDur",
+      "description": "This attribute specifies the total duration for repeat.",
+      "values": [
+        {
+          "name": "indefinite"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatDur"
+        }
+      ]
+    },
+    {
+      "name": "restart",
+      "description": "This attribute indicates when animation can or can not restart.",
+      "values": [
+        {
+          "name": "always"
+        },
+        {
+          "name": "whenNotActive"
+        },
+        {
+          "name": "never"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/restart"
+        }
+      ]
+    }
+  ],
+  "AnimationValueAttributes": [
+    {
+      "name": "by",
+      "description": "specifies a relative offset value for an attribute that will be modified during an animation.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/by"
+        }
+      ]
+    },
+    {
+      "name": "calcMode",
+      "description": "This attribute specifies the interpolation mode for the animation. The default mode is linear, however if the attribute does not support linear interpolation (e.g. for strings), the calcMode attribute is ignored and discrete interpolation is used.",
+      "values": [
+        {
+          "name": "discrete"
+        },
+        {
+          "name": "linear"
+        },
+        {
+          "name": "paced"
+        },
+        {
+          "name": "spline"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcMode"
+        }
+      ]
+    },
+    {
+      "name": "from",
+      "description": "This attribute indicates the initial value of the attribute that will be modified during the animation. When used with the to attribute, the animation will change the modified attribute from the from value to the to value.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/from"
+        }
+      ]
+    },
+    {
+      "name": "keySplines",
+      "description": "The keySplines attribute define a set of Bézier control points associated with the keyTimes list, defining a cubic Bézier function that controls interval pacing. The attribute value is a semicolon-separated list of control point descriptions. Each control point description is a set of four values: x1 y1 x2 y2, describing the Bézier control points for one time segment. The keyTimes values that define the associated segment are the Bézier \"anchor points\", and the keySplines values are the control points. Thus, there must be one fewer sets of control points than there are keyTimes.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keySplines"
+        }
+      ]
+    },
+    {
+      "name": "keyTimes",
+      "description": "The keyTimes attribute is a semicolon-separated list of time values used to control the pacing of the animation. Each time in the list corresponds to a value in the values attribute list, and defines when the value is used in the animation. Each time value in the keyTimes list is specified as a floating point value between 0 and 1 (inclusive), representing a proportional offset into the duration of the animation element.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keyTimes"
+        }
+      ]
+    },
+    {
+      "name": "to",
+      "description": "This attribute indicates the final value of the attribute that will be modified during the animation. The value of the attribute will change between the from attribute value and this value. By default the change will be linear.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/to"
+        }
+      ]
+    },
+    {
+      "name": "values",
+      "description": "Has different meanings, depending upon the context where it's used, either it defines a sequence of values used over the course of an animation, or it's a list of numbers for a color matrix, which is interpreted differently depending on the type of color change to be performed.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/values"
+        }
+      ]
+    }
+  ],
+  "AriaAttributes": [
+    {
+      "name": "aria-activedescendant",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the currently active element when DOM focus is on a [`composite`](https://www.w3.org/TR/wai-aria-1.1/#composite) widget, [`textbox`](https://www.w3.org/TR/wai-aria-1.1/#textbox), [`group`](https://www.w3.org/TR/wai-aria-1.1/#group), or [`application`](https://www.w3.org/TR/wai-aria-1.1/#application)."
+      }
+    },
+    {
+      "name": "aria-atomic",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-atomic"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether [assistive technologies](https://www.w3.org/TR/wai-aria-1.1/#dfn-assistive-technology) will present all, or only parts of, the changed region based on the change notifications defined by the [`aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant) attribute."
+      }
+    },
+    {
+      "name": "aria-autocomplete",
+      "valueSet": "autocomplete",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be presented if they are made."
+      }
+    },
+    {
+      "name": "aria-busy",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-busy"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates an element is being modified and that assistive technologies _MAY_ want to wait until the modifications are complete before exposing them to the user."
+      }
+    },
+    {
+      "name": "aria-checked",
+      "valueSet": "tristate",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-checked"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates the current \"checked\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) of checkboxes, radio buttons, and other [widgets](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget). See related [`aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed) and [`aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)."
+      }
+    },
+    {
+      "name": "aria-colcount",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-colcount"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the total number of columns in a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)."
+      }
+    },
+    {
+      "name": "aria-colindex",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-colindex"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines an [element's](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) column index or position with respect to the total number of columns within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount) and [`aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)."
+      }
+    },
+    {
+      "name": "aria-colspan",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-colspan"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the number of columns spanned by a cell or gridcell within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex) and [`aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)."
+      }
+    },
+    {
+      "name": "aria-controls",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-controls"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) whose contents or presence are controlled by the current element. See related [`aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)."
+      }
+    },
+    {
+      "name": "aria-current",
+      "valueSet": "current",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-current"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that represents the current item within a container or set of related elements."
+      }
+    },
+    {
+      "name": "aria-describedby",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-describedby"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) that describes the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)."
+      }
+    },
+    {
+      "name": "aria-details",
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that provides a detailed, extended description for the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
+      }
+    },
+    {
+      "name": "aria-disabled",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-disabled"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates that the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is [perceivable](https://www.w3.org/TR/wai-aria-1.1/#dfn-perceivable) but disabled, so it is not editable or otherwise [operable](https://www.w3.org/TR/wai-aria-1.1/#dfn-operable). See related [`aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden) and [`aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)."
+      }
+    },
+    {
+      "name": "aria-dropeffect",
+      "valueSet": "dropeffect",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "\\[Deprecated in ARIA 1.1\\] Indicates what functions can be performed when a dragged object is released on the drop target."
+      }
+    },
+    {
+      "name": "aria-errormessage",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that provides an error message for the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid) and [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
+      }
+    },
+    {
+      "name": "aria-expanded",
+      "valueSet": "u",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-expanded"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed."
+      }
+    },
+    {
+      "name": "aria-flowto",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-flowto"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the next [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) in an alternate reading order of content which, at the user's discretion, allows assistive technology to override the general default of reading in document source order."
+      }
+    },
+    {
+      "name": "aria-grabbed",
+      "valueSet": "u",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "\\[Deprecated in ARIA 1.1\\] Indicates an element's \"grabbed\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) in a drag-and-drop operation."
+      }
+    },
+    {
+      "name": "aria-haspopup",
+      "valueSet": "haspopup",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element)."
+      }
+    },
+    {
+      "name": "aria-hidden",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-hidden"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is exposed to an accessibility API. See related [`aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)."
+      }
+    },
+    {
+      "name": "aria-invalid",
+      "valueSet": "invalid",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-invalid"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates the entered value does not conform to the format expected by the application. See related [`aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)."
+      }
+    },
+    {
+      "name": "aria-keyshortcuts",
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element."
+      }
+    },
+    {
+      "name": "aria-label",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-label"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines a string value that labels the current element. See related [`aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)."
+      }
+    },
+    {
+      "name": "aria-labelledby",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) that labels the current element. See related [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
+      }
+    },
+    {
+      "name": "aria-level",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-level"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the hierarchical level of an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) within a structure."
+      }
+    },
+    {
+      "name": "aria-live",
+      "valueSet": "live",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-live"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates that an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) will be updated, and describes the types of updates the [user agents](https://www.w3.org/TR/wai-aria-1.1/#dfn-user-agent), [assistive technologies](https://www.w3.org/TR/wai-aria-1.1/#dfn-assistive-technology), and user can expect from the [live region](https://www.w3.org/TR/wai-aria-1.1/#dfn-live-region)."
+      }
+    },
+    {
+      "name": "aria-modal",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-modal"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is modal when displayed."
+      }
+    },
+    {
+      "name": "aria-multiline",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-multiline"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether a text box accepts multiple lines of input or only a single line."
+      }
+    },
+    {
+      "name": "aria-multiselectable",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates that the user may select more than one item from the current selectable descendants."
+      }
+    },
+    {
+      "name": "aria-orientation",
+      "valueSet": "orientation",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-orientation"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous."
+      }
+    },
+    {
+      "name": "aria-owns",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-owns"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Identifies an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) in order to define a visual, functional, or contextual parent/child [relationship](https://www.w3.org/TR/wai-aria-1.1/#dfn-relationship) between DOM elements where the DOM hierarchy cannot be used to represent the relationship. See related [`aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)."
+      }
+    },
+    {
+      "name": "aria-placeholder",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value. A hint could be a sample value or a brief description of the expected format."
+      }
+    },
+    {
+      "name": "aria-posinset",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-posinset"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element)'s number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related [`aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)."
+      }
+    },
+    {
+      "name": "aria-pressed",
+      "valueSet": "tristate",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-pressed"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates the current \"pressed\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) of toggle buttons. See related [`aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked) and [`aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)."
+      }
+    },
+    {
+      "name": "aria-readonly",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-readonly"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates that the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is not editable, but is otherwise [operable](https://www.w3.org/TR/wai-aria-1.1/#dfn-operable). See related [`aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)."
+      }
+    },
+    {
+      "name": "aria-relevant",
+      "valueSet": "relevant",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-relevant"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified. See related [`aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)."
+      }
+    },
+    {
+      "name": "aria-required",
+      "valueSet": "b",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-required"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates that user input is required on the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) before a form may be submitted."
+      }
+    },
+    {
+      "name": "aria-roledescription",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines a human-readable, author-localized description for the [role](https://www.w3.org/TR/wai-aria-1.1/#dfn-role) of an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element)."
+      }
+    },
+    {
+      "name": "aria-rowcount",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the total number of rows in a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)."
+      }
+    },
+    {
+      "name": "aria-rowindex",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines an [element's](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) row index or position with respect to the total number of rows within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount) and [`aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)."
+      }
+    },
+    {
+      "name": "aria-rowspan",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the number of rows spanned by a cell or gridcell within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex) and [`aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)."
+      }
+    },
+    {
+      "name": "aria-selected",
+      "valueSet": "u",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-selected"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates the current \"selected\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) of various [widgets](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget). See related [`aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked) and [`aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)."
+      }
+    },
+    {
+      "name": "aria-setsize",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-setsize"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related [`aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)."
+      }
+    },
+    {
+      "name": "aria-sort",
+      "valueSet": "sort",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-sort"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Indicates if items in a table or grid are sorted in ascending or descending order."
+      }
+    },
+    {
+      "name": "aria-valuemax",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the maximum allowed value for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget)."
+      }
+    },
+    {
+      "name": "aria-valuemin",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the minimum allowed value for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget)."
+      }
+    },
+    {
+      "name": "aria-valuenow",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the current value for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget). See related [`aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)."
+      }
+    },
+    {
+      "name": "aria-valuetext",
+      "references": [
+        {
+          "name": "WAI-ARIA Reference",
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext"
+        }
+      ],
+      "description": {
+        "kind": "markdown",
+        "value": "Defines the human readable text alternative of [`aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow) for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget)."
+      }
+    },
+    {
+      "name": "role",
+      "valueSet": "roles"
+    }
+  ],
+  "FilterPrimitiveAttributes": [
+    {
+      "name": "height",
+      "description": "This attribute indicates a vertical length in the user coordinate system. The exact effect of this coordinate depends on each element. Most of the time, it represents the height of the rectangular region of the reference element (see each individual element's documentation for exceptions).",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height"
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "description": "The result attribute defines the assigned name for this filter primitive. If supplied, then graphics that result from processing this filter primitive can be referenced by an in attribute on a subsequent filter primitive within the same <filter> element. If no value is provided, the output will only be available for re-use as the implicit input into the next filter primitive if that filter primitive provides no value for its in attribute.",
+      "values": [
+        {
+          "name": "none meet"
+        },
+        {
+          "name": "none slice"
+        },
+        {
+          "name": "xMinYMin meet"
+        },
+        {
+          "name": "xMinYMin slice"
+        },
+        {
+          "name": "xMidYMin meet"
+        },
+        {
+          "name": "xMidYMin slice"
+        },
+        {
+          "name": "xMaxYMin meet"
+        },
+        {
+          "name": "xMaxYMin slice"
+        },
+        {
+          "name": "xMinYMid meet"
+        },
+        {
+          "name": "xMinYMid slice"
+        },
+        {
+          "name": "xMidYMid meet"
+        },
+        {
+          "name": "xMidYMid slice"
+        },
+        {
+          "name": "xMaxYMid meet"
+        },
+        {
+          "name": "xMaxYMid slice"
+        },
+        {
+          "name": "xMinYMax meet"
+        },
+        {
+          "name": "xMinYMax slice"
+        },
+        {
+          "name": "xMidYMax meet"
+        },
+        {
+          "name": "xMidYMax slice"
+        },
+        {
+          "name": "xMaxYMax meet"
+        },
+        {
+          "name": "xMaxYMax slice"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/result"
+        }
+      ]
+    },
+    {
+      "name": "width",
+      "description": "This attribute indicates an horizontal length in the user coordinate system. The exact effect of this coordinate depends on each element. Most of the time, it represents the width of the rectangular region of the reference element (see each individual element's documentation for exceptions).",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width"
+        }
+      ]
+    },
+    {
+      "name": "x",
+      "description": "This attribute indicates an x-axis coordinate in the user coordinate system. The exact effect of this coordinate depend on each element. Most of the time, it represent the x-axis coordinate of the upper-left corner of the rectangular region of the reference element (see each individual element's documentation for exceptions).Its syntax is the same as that for <length>",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x"
+        }
+      ]
+    },
+    {
+      "name": "y",
+      "description": "This attribute indicates an y-axis coordinate in the user coordinate system. The exact effect of this coordinate depend on each element. Most of the time, it represent the x-axis coordinate of the upper-left corner of the rectangular region of the reference element (see each individual element's documentation for exceptions).Its syntax is the same as that for <length>",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y"
+        }
+      ]
+    }
+  ],
+  "PresentationAttributes": [
     {
       "name": "alignment-baseline",
       "description": "The alignment-baseline attribute specifies how an object is aligned with respect to its parent. This property specifies which baseline of this element is to be aligned with the corresponding baseline of the parent. For example, this allows alphabetic baselines in Roman text to stay aligned across font size changes. It defaults to the baseline with the same name as the computed value of the alignment-baseline property.",
@@ -64,23 +1094,6 @@
     {
       "name": "baseline-shift",
       "description": "The baseline-shift attribute allows repositioning of the dominant-baseline relative to the dominant-baseline of the parent text content element. The shifted object might be a sub- or superscript.",
-      "values": [
-        {
-          "name": "auto"
-        },
-        {
-          "name": "baseline"
-        },
-        {
-          "name": "super"
-        },
-        {
-          "name": "sub"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -405,43 +1418,31 @@
       "description": "The dominant-baseline attribute is used to determine or re-determine a scaled-baseline-table. A scaled-baseline-table is a compound value with three components: a baseline-identifier for the dominant-baseline, a baseline-table and a baseline-table font-size. Some values of the property re-determine all three values; other only re-establish the baseline-table font-size. When the initial value, auto, would give an undesired result, this property can be used to explicitly set the desire scaled-baseline-table.",
       "values": [
         {
-          "name": "     auto"
+          "name": "auto"
         },
         {
-          "name": "use-script"
-        },
-        {
-          "name": "no-change"
-        },
-        {
-          "name": "reset-size"
-        },
-        {
-          "name": "ideographic"
+          "name": "text-bottom"
         },
         {
           "name": "alphabetic"
         },
         {
-          "name": "hanging"
-        },
-        {
-          "name": "mathematical"
-        },
-        {
-          "name": "central"
+          "name": "ideographic"
         },
         {
           "name": "middle"
         },
         {
-          "name": "text-after-edge"
+          "name": "central"
         },
         {
-          "name": "text-before-edge"
+          "name": "mathematical"
         },
         {
-          "name": "inherit"
+          "name": "hanging"
+        },
+        {
+          "name": "text-top"
         }
       ],
       "references": [
@@ -1263,6 +2264,16 @@
       ]
     },
     {
+      "name": "transform",
+      "description": "The transform attribute defines a list of transform definitions that are applied to an element and the element's children. The items in the transform list are separated by whitespace and/or commas, and are applied from right to left.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform"
+        }
+      ]
+    },
+    {
       "name": "vector-effect",
       "description": "The vector-effect property specifies the vector effect to use when drawing an object. Vector effects are applied before any of the other compositing operations, i.e. filters, masks and clips.",
       "values": [
@@ -1365,204 +2376,20 @@
       ]
     }
   ],
-  "FilterPrimitiveAttributes": [
-    {
-      "name": "height",
-      "description": "This attribute indicates a vertical length in the user coordinate system. The exact effect of this coordinate depends on each element. Most of the time, it represents the height of the rectangular region of the reference element (see each individual element's documentation for exceptions).",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height"
-        }
-      ]
-    },
-    {
-      "name": "width",
-      "description": "This attribute indicates an horizontal length in the user coordinate system. The exact effect of this coordinate depends on each element. Most of the time, it represents the width of the rectangular region of the reference element (see each individual element's documentation for exceptions).",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width"
-        }
-      ]
-    },
-    {
-      "name": "x",
-      "description": "This attribute indicates an x-axis coordinate in the user coordinate system. The exact effect of this coordinate depend on each element. Most of the time, it represent the x-axis coordinate of the upper-left corner of the rectangular region of the reference element (see each individual element's documentation for exceptions).Its syntax is the same as that for <length>",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x"
-        }
-      ]
-    },
-    {
-      "name": "y",
-      "description": "This attribute indicates an y-axis coordinate in the user coordinate system. The exact effect of this coordinate depend on each element. Most of the time, it represent the x-axis coordinate of the upper-left corner of the rectangular region of the reference element (see each individual element's documentation for exceptions).Its syntax is the same as that for <length>",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y"
-        }
-      ]
-    },
-    {
-      "name": "result",
-      "description": "The result attribute defines the assigned name for this filter primitive. If supplied, then graphics that result from processing this filter primitive can be referenced by an in attribute on a subsequent filter primitive within the same <filter> element. If no value is provided, the output will only be available for re-use as the implicit input into the next filter primitive if that filter primitive provides no value for its in attribute.",
-      "values": [
-        {
-          "name": "none meet"
-        },
-        {
-          "name": "none slice"
-        },
-        {
-          "name": "xMinYMin meet"
-        },
-        {
-          "name": "xMinYMin slice"
-        },
-        {
-          "name": "xMidYMin meet"
-        },
-        {
-          "name": "xMidYMin slice"
-        },
-        {
-          "name": "xMaxYMin meet"
-        },
-        {
-          "name": "xMaxYMin slice"
-        },
-        {
-          "name": "xMinYMid meet"
-        },
-        {
-          "name": "xMinYMid slice"
-        },
-        {
-          "name": "xMidYMid meet"
-        },
-        {
-          "name": "xMidYMid slice"
-        },
-        {
-          "name": "xMaxYMid meet"
-        },
-        {
-          "name": "xMaxYMid slice"
-        },
-        {
-          "name": "xMinYMax meet"
-        },
-        {
-          "name": "xMinYMax slice"
-        },
-        {
-          "name": "xMidYMax meet"
-        },
-        {
-          "name": "xMidYMax slice"
-        },
-        {
-          "name": "xMaxYMax meet"
-        },
-        {
-          "name": "xMaxYMax slice"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/result"
-        }
-      ]
-    }
-  ],
   "TransferFunctionAttributes": [
     {
-      "name": "type",
-      "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
-      "values": [
-        {
-          "name": "translate"
-        },
-        {
-          "name": "scale"
-        },
-        {
-          "name": "rotate"
-        },
-        {
-          "name": "skewX"
-        },
-        {
-          "name": "skewY"
-        },
-        {
-          "name": "matrix"
-        },
-        {
-          "name": "saturate"
-        },
-        {
-          "name": "hueRotate"
-        },
-        {
-          "name": "luminanceToAlpha"
-        },
-        {
-          "name": "identity"
-        },
-        {
-          "name": "table"
-        },
-        {
-          "name": "discrete"
-        },
-        {
-          "name": "linear"
-        },
-        {
-          "name": "gamma"
-        },
-        {
-          "name": "fractalNoise"
-        },
-        {
-          "name": "turbulence"
-        }
-      ],
+      "name": "amplitude",
+      "description": "Controls the amplitude of the gamma function of a component transfer element when its type attribute is gamma.",
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type"
-        }
-      ]
-    },
-    {
-      "name": "tableValues",
-      "description": "Defines a list of numbers defining a lookup table of values for a color component transfer function.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tableValues"
-        }
-      ]
-    },
-    {
-      "name": "intercept",
-      "description": "Defines the intercept of the linear function of color component transfers when the type attribute is set to linear.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/intercept"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/amplitude"
         }
       ]
     },
     {
       "name": "amplitude",
-      "description": "Controls the amplitude of the gamma function of a component transfer element when its type attribute is gamma.",
+      "description": "Defines the exponent of the gamma function.",
       "references": [
         {
           "name": "MDN Reference",
@@ -1581,222 +2408,35 @@
       ]
     },
     {
-      "name": "amplitude",
-      "description": "Defines the exponent of the gamma function.",
+      "name": "intercept",
+      "description": "Defines the intercept of the linear function of color component transfers when the type attribute is set to linear.",
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/amplitude"
-        }
-      ]
-    }
-  ],
-  "AnimationTargetElementAttributes": [
-    {
-      "name": "href",
-      "description": "This attribute indicates the name of the attribute in the parent element that is going to be changed during an animation.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href"
-        }
-      ]
-    }
-  ],
-  "AnimationAttributeTargetAttributes": [
-    {
-      "name": "attributeName",
-      "description": "This attribute indicates the name of the attribute in the parent element that is going to be changed during an animation. ",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeName"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/intercept"
         }
       ]
     },
     {
-      "name": "attributeType",
-      "description": "This attribute specifies the namespace in which the target attribute and its associated values are defined. ",
+      "name": "tableValues",
+      "description": "Defines a list of numbers defining a lookup table of values for a color component transfer function.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tableValues"
+        }
+      ]
+    },
+    {
+      "name": "type",
+      "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
       "values": [
         {
-          "name": "CSS"
+          "name": "identity"
         },
         {
-          "name": "XML"
+          "name": "table"
         },
-        {
-          "name": "auto"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeType"
-        }
-      ]
-    }
-  ],
-  "AnimationTimingAttributes": [
-    {
-      "name": "dur",
-      "description": "This attribute indicates the simple duration of the animation.",
-      "values": [
-        {
-          "name": "indefinite"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dur"
-        }
-      ]
-    },
-    {
-      "name": "repeatCount",
-      "description": "This attribute indicates the number of time the animation will take place.",
-      "values": [
-        {
-          "name": "indefinite"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatCount"
-        }
-      ]
-    },
-    {
-      "name": "begin",
-      "description": "Defines when an animation should begin or when an element should be discarded.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin"
-        }
-      ]
-    },
-    {
-      "name": "end",
-      "description": "This attribute defines an end value for the animation that can constrain the active duration.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end"
-        }
-      ]
-    },
-    {
-      "name": "min",
-      "description": "This attribute specifies the minimum value of the active duration.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/min"
-        }
-      ]
-    },
-    {
-      "name": "max",
-      "description": "This attribute specifies the maximum value of the active duration. ",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/max"
-        }
-      ]
-    },
-    {
-      "name": "restart",
-      "description": "This attribute indicates when animation can or can not restart.",
-      "values": [
-        {
-          "name": "always"
-        },
-        {
-          "name": "whenNotActive"
-        },
-        {
-          "name": "never"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/restart"
-        }
-      ]
-    },
-    {
-      "name": "repeatDur",
-      "description": "This attribute specifies the total duration for repeat.",
-      "values": [
-        {
-          "name": "indefinite"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatDur"
-        }
-      ]
-    },
-    {
-      "name": "fill",
-      "description": "The fill attribute has two meanings based on the context it's used.",
-      "values": [
-        {
-          "name": "remove"
-        },
-        {
-          "name": "freeze"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill"
-        }
-      ]
-    }
-  ],
-  "AnimationValueAttributes": [
-    {
-      "name": "from",
-      "description": "This attribute indicates the initial value of the attribute that will be modified during the animation. When used with the to attribute, the animation will change the modified attribute from the from value to the to value.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/from"
-        }
-      ]
-    },
-    {
-      "name": "to",
-      "description": "This attribute indicates the final value of the attribute that will be modified during the animation. The value of the attribute will change between the from attribute value and this value. By default the change will be linear.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/to"
-        }
-      ]
-    },
-    {
-      "name": "by",
-      "description": "specifies a relative offset value for an attribute that will be modified during an animation.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/by"
-        }
-      ]
-    },
-    {
-      "name": "calcMode",
-      "description": "This attribute specifies the interpolation mode for the animation. The default mode is linear, however if the attribute does not support linear interpolation (e.g. for strings), the calcMode attribute is ignored and discrete interpolation is used.",
-      "values": [
         {
           "name": "discrete"
         },
@@ -1804,727 +2444,15 @@
           "name": "linear"
         },
         {
-          "name": "paced"
-        },
-        {
-          "name": "spline"
+          "name": "gamma"
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcMode"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type"
         }
       ]
-    },
-    {
-      "name": "keyTimes",
-      "description": "The keyTimes attribute is a semicolon-separated list of time values used to control the pacing of the animation. Each time in the list corresponds to a value in the values attribute list, and defines when the value is used in the animation. Each time value in the keyTimes list is specified as a floating point value between 0 and 1 (inclusive), representing a proportional offset into the duration of the animation element.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keyTimes"
-        }
-      ]
-    },
-    {
-      "name": "keySplines",
-      "description": "The keySplines attribute define a set of Bézier control points associated with the keyTimes list, defining a cubic Bézier function that controls interval pacing. The attribute value is a semicolon-separated list of control point descriptions. Each control point description is a set of four values: x1 y1 x2 y2, describing the Bézier control points for one time segment. The keyTimes values that define the associated segment are the Bézier \"anchor points\", and the keySplines values are the control points. Thus, there must be one fewer sets of control points than there are keyTimes.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keySplines"
-        }
-      ]
-    },
-    {
-      "name": "values",
-      "description": "Has different meanings, depending upon the context where it's used, either it defines a sequence of values used over the course of an animation, or it's a list of numbers for a color matrix, which is interpreted differently depending on the type of color change to be performed.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/values"
-        }
-      ]
-    }
-  ],
-  "AnimationAdditionAttributes": [
-    {
-      "name": "additive",
-      "description": "This attribute controls whether or not the animation is additive.",
-      "values": [
-        {
-          "name": "replace"
-        },
-        {
-          "name": "sum"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/additive"
-        }
-      ]
-    },
-    {
-      "name": "accumulate",
-      "description": "This attribute controls whether or not the animation is cumulative.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "sum"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/accumulate"
-        }
-      ]
-    }
-  ],
-  "AriaAttributes": [
-    {
-      "name": "role",
-      "valueSet": "roles"
-    },
-    {
-      "name": "aria-activedescendant",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the currently active element when DOM focus is on a [`composite`](https://www.w3.org/TR/wai-aria-1.1/#composite) widget, [`textbox`](https://www.w3.org/TR/wai-aria-1.1/#textbox), [`group`](https://www.w3.org/TR/wai-aria-1.1/#group), or [`application`](https://www.w3.org/TR/wai-aria-1.1/#application)."
-      }
-    },
-    {
-      "name": "aria-atomic",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-atomic"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether [assistive technologies](https://www.w3.org/TR/wai-aria-1.1/#dfn-assistive-technology) will present all, or only parts of, the changed region based on the change notifications defined by the [`aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant) attribute."
-      }
-    },
-    {
-      "name": "aria-autocomplete",
-      "valueSet": "autocomplete",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be presented if they are made."
-      }
-    },
-    {
-      "name": "aria-busy",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-busy"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates an element is being modified and that assistive technologies _MAY_ want to wait until the modifications are complete before exposing them to the user."
-      }
-    },
-    {
-      "name": "aria-checked",
-      "valueSet": "tristate",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-checked"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates the current \"checked\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) of checkboxes, radio buttons, and other [widgets](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget). See related [`aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed) and [`aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)."
-      }
-    },
-    {
-      "name": "aria-colcount",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-colcount"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the total number of columns in a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)."
-      }
-    },
-    {
-      "name": "aria-colindex",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-colindex"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines an [element's](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) column index or position with respect to the total number of columns within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount) and [`aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)."
-      }
-    },
-    {
-      "name": "aria-colspan",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-colspan"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the number of columns spanned by a cell or gridcell within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex) and [`aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)."
-      }
-    },
-    {
-      "name": "aria-controls",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-controls"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) whose contents or presence are controlled by the current element. See related [`aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)."
-      }
-    },
-    {
-      "name": "aria-current",
-      "valueSet": "current",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-current"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that represents the current item within a container or set of related elements."
-      }
-    },
-    {
-      "name": "aria-describedby",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-describedby"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) that describes the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)."
-      }
-    },
-    {
-      "name": "aria-disabled",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-disabled"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates that the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is [perceivable](https://www.w3.org/TR/wai-aria-1.1/#dfn-perceivable) but disabled, so it is not editable or otherwise [operable](https://www.w3.org/TR/wai-aria-1.1/#dfn-operable). See related [`aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden) and [`aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)."
-      }
-    },
-    {
-      "name": "aria-dropeffect",
-      "valueSet": "dropeffect",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "\\[Deprecated in ARIA 1.1\\] Indicates what functions can be performed when a dragged object is released on the drop target."
-      }
-    },
-    {
-      "name": "aria-errormessage",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that provides an error message for the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid) and [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
-      }
-    },
-    {
-      "name": "aria-expanded",
-      "valueSet": "u",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-expanded"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed."
-      }
-    },
-    {
-      "name": "aria-flowto",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-flowto"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the next [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) in an alternate reading order of content which, at the user's discretion, allows assistive technology to override the general default of reading in document source order."
-      }
-    },
-    {
-      "name": "aria-grabbed",
-      "valueSet": "u",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "\\[Deprecated in ARIA 1.1\\] Indicates an element's \"grabbed\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) in a drag-and-drop operation."
-      }
-    },
-    {
-      "name": "aria-haspopup",
-      "valueSet": "haspopup",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element)."
-      }
-    },
-    {
-      "name": "aria-hidden",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-hidden"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is exposed to an accessibility API. See related [`aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)."
-      }
-    },
-    {
-      "name": "aria-invalid",
-      "valueSet": "invalid",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-invalid"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates the entered value does not conform to the format expected by the application. See related [`aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)."
-      }
-    },
-    {
-      "name": "aria-label",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-label"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines a string value that labels the current element. See related [`aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)."
-      }
-    },
-    {
-      "name": "aria-labelledby",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) that labels the current element. See related [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
-      }
-    },
-    {
-      "name": "aria-level",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-level"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the hierarchical level of an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) within a structure."
-      }
-    },
-    {
-      "name": "aria-live",
-      "valueSet": "live",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-live"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates that an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) will be updated, and describes the types of updates the [user agents](https://www.w3.org/TR/wai-aria-1.1/#dfn-user-agent), [assistive technologies](https://www.w3.org/TR/wai-aria-1.1/#dfn-assistive-technology), and user can expect from the [live region](https://www.w3.org/TR/wai-aria-1.1/#dfn-live-region)."
-      }
-    },
-    {
-      "name": "aria-modal",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-modal"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is modal when displayed."
-      }
-    },
-    {
-      "name": "aria-multiline",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-multiline"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether a text box accepts multiple lines of input or only a single line."
-      }
-    },
-    {
-      "name": "aria-multiselectable",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates that the user may select more than one item from the current selectable descendants."
-      }
-    },
-    {
-      "name": "aria-orientation",
-      "valueSet": "orientation",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-orientation"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous."
-      }
-    },
-    {
-      "name": "aria-owns",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-owns"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) (or elements) in order to define a visual, functional, or contextual parent/child [relationship](https://www.w3.org/TR/wai-aria-1.1/#dfn-relationship) between DOM elements where the DOM hierarchy cannot be used to represent the relationship. See related [`aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)."
-      }
-    },
-    {
-      "name": "aria-placeholder",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value. A hint could be a sample value or a brief description of the expected format."
-      }
-    },
-    {
-      "name": "aria-posinset",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-posinset"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element)'s number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related [`aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)."
-      }
-    },
-    {
-      "name": "aria-pressed",
-      "valueSet": "tristate",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-pressed"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates the current \"pressed\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) of toggle buttons. See related [`aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked) and [`aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)."
-      }
-    },
-    {
-      "name": "aria-readonly",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-readonly"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates that the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) is not editable, but is otherwise [operable](https://www.w3.org/TR/wai-aria-1.1/#dfn-operable). See related [`aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)."
-      }
-    },
-    {
-      "name": "aria-relevant",
-      "valueSet": "relevant",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-relevant"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified. See related [`aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)."
-      }
-    },
-    {
-      "name": "aria-required",
-      "valueSet": "b",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-required"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates that user input is required on the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) before a form may be submitted."
-      }
-    },
-    {
-      "name": "aria-roledescription",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines a human-readable, author-localized description for the [role](https://www.w3.org/TR/wai-aria-1.1/#dfn-role) of an [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element)."
-      }
-    },
-    {
-      "name": "aria-rowcount",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the total number of rows in a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)."
-      }
-    },
-    {
-      "name": "aria-rowindex",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines an [element's](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) row index or position with respect to the total number of rows within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount) and [`aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)."
-      }
-    },
-    {
-      "name": "aria-rowspan",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the number of rows spanned by a cell or gridcell within a [`table`](https://www.w3.org/TR/wai-aria-1.1/#table), [`grid`](https://www.w3.org/TR/wai-aria-1.1/#grid), or [`treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid). See related [`aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex) and [`aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)."
-      }
-    },
-    {
-      "name": "aria-selected",
-      "valueSet": "u",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-selected"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates the current \"selected\" [state](https://www.w3.org/TR/wai-aria-1.1/#dfn-state) of various [widgets](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget). See related [`aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked) and [`aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)."
-      }
-    },
-    {
-      "name": "aria-setsize",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-setsize"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related [`aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)."
-      }
-    },
-    {
-      "name": "aria-sort",
-      "valueSet": "sort",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-sort"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates if items in a table or grid are sorted in ascending or descending order."
-      }
-    },
-    {
-      "name": "aria-valuemax",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the maximum allowed value for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget)."
-      }
-    },
-    {
-      "name": "aria-valuemin",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the minimum allowed value for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget)."
-      }
-    },
-    {
-      "name": "aria-valuenow",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the current value for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget). See related [`aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)."
-      }
-    },
-    {
-      "name": "aria-valuetext",
-      "references": [
-        {
-          "name": "WAI-ARIA Reference",
-          "url": "https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext"
-        }
-      ],
-      "description": {
-        "kind": "markdown",
-        "value": "Defines the human readable text alternative of [`aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow) for a range [widget](https://www.w3.org/TR/wai-aria-1.1/#dfn-widget)."
-      }
-    },
-    {
-      "name": "aria-details",
-      "description": {
-        "kind": "markdown",
-        "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that provides a detailed, extended description for the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
-      }
-    },
-    {
-      "name": "aria-keyshortcuts",
-      "description": {
-        "kind": "markdown",
-        "value": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element."
-      }
     }
   ]
 }

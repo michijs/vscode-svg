@@ -45,3 +45,10 @@ export const valueSet = (name: string, values: string[]) => ({
     name: x,
   })),
 });
+
+export const type = (values: string[]) =>
+  attribute(
+    "type",
+    `Is a generic attribute and it has different meaning based on the context in which it's used.`,
+    values,
+  );

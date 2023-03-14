@@ -1,6 +1,6 @@
 import { IAttributeData } from "vscode-html-languageservice";
 import { attributes } from "./attributes";
-import { attribute } from "./utils";
+import { attribute, type } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
 
 const CoreAttributes = [
@@ -444,7 +444,7 @@ const FilterPrimitiveAttributes = [
   attributes.result,
 ];
 const TransferFunctionAttributes = [
-  attributes.type,
+  type(["identity", "table", "discrete", "linear", "gamma"]),
   attribute(
     "tableValues",
     "Defines a list of numbers defining a lookup table of values for a color component transfer function.",

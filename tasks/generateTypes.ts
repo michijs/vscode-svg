@@ -1,8 +1,8 @@
 import * as fs from "fs";
-import { HTMLDataV1 } from "vscode-html-languageservice";
+import { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
 import { attributes } from "./attributes";
 import { attributeSets, GenericAttributes } from "./attributeSets";
-import { element, attribute } from "./utils";
+import { element, attribute, type } from "./utils";
 import { valueSets } from "./valueSets";
 
 const jsonData: HTMLDataV1 = {
@@ -31,10 +31,12 @@ const jsonData: HTMLDataV1 = {
           "The relationship of the target object to the link object.",
         ),
         attribute("target", "Where to display the linked URL.", "target"),
-        attributes.type,
+        type([]),
+        ...attributeSets.TransferFunctionAttributes.filter(
+          (x) => x.name !== "type",
+        ),
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
-        ...attributeSets.TransferFunctionAttributes,
       ],
     ),
     element(
@@ -229,7 +231,6 @@ const jsonData: HTMLDataV1 = {
       "feDiffuseLighting",
       "The <feDiffuseLighting> SVG filter primitive lights an image using the alpha channel as a bump map.",
       [
-        attributes.type,
         attributes.in,
         attributes.surfaceScale,
         attributes.kernelUnitLength,
@@ -302,22 +303,22 @@ const jsonData: HTMLDataV1 = {
     element(
       "feFuncA",
       "The <feFuncA> SVG filter primitive defines the transfer function for the alpha component of the input graphic of its parent <feComponentTransfer> element.",
-      [attributes.type, ...attributeSets.TransferFunctionAttributes],
+      attributeSets.TransferFunctionAttributes,
     ),
     element(
       "feFuncB",
       "The <feFuncA> SVG filter primitive defines the transfer function for the blue component of the input graphic of its parent <feComponentTransfer> element.",
-      [attributes.type, ...attributeSets.TransferFunctionAttributes],
+      attributeSets.TransferFunctionAttributes,
     ),
     element(
       "feFuncG",
       "The <feFuncA> SVG filter primitive defines the transfer function for the green component of the input graphic of its parent <feComponentTransfer> element.",
-      [attributes.type, ...attributeSets.TransferFunctionAttributes],
+      attributeSets.TransferFunctionAttributes,
     ),
     element(
       "feFuncR",
       "The <feFuncA> SVG filter primitive defines the transfer function for the red component of the input graphic of its parent <feComponentTransfer> element.",
-      [attributes.type, ...attributeSets.TransferFunctionAttributes],
+      attributeSets.TransferFunctionAttributes,
     ),
     element(
       "feGaussianBlur",
@@ -434,7 +435,7 @@ const jsonData: HTMLDataV1 = {
       "feTurbulence",
       "The <feTurbulence> SVG filter primitive creates an image using the Perlin turbulence function.",
       [
-        attributes.type,
+        type(["fractalNoise", "turbulence"]),
         attribute(
           "baseFrequency",
           "The baseFrequency attribute represent The base frequencies parameter for the noise function of the <feturbulence> primitive. If two <number>s are provided, the first number represents a base frequency in the X direction and the second value represents a base frequency in the Y direction. If one number is provided, then that value is used for both X and Y.",
@@ -702,7 +703,7 @@ const jsonData: HTMLDataV1 = {
       "A SVG script element is equivalent to the script element in HTML and thus is the place for scripts (e.g., ECMAScript).",
       [
         attributes.crossorigin,
-        attributes.type,
+        type([]),
         ...attributeSets.AnimationTargetElementAttributes,
       ],
     ),
@@ -724,7 +725,7 @@ const jsonData: HTMLDataV1 = {
       "style",
       `The <style> SVG element allows style sheets to be embedded directly within SVG content. SVG's style element has the same attributes as the corresponding element in HTML (see HTML's <style> element).`,
       [
-        attributes.type,
+        type([]),
         attribute(
           "media",
           "This attribute defines to which media the style applies.",
@@ -844,10 +845,40 @@ const jsonData: HTMLDataV1 = {
   globalAttributes: GenericAttributes,
 };
 
-fs.writeFileSync("./dist/svg.json", JSON.stringify(jsonData, null, 2), "utf-8");
+const orderedData: HTMLDataV1 = {
+  ...jsonData,
+  tags: jsonData.tags
+    ?.map((x) => ({
+      ...x,
+      attributes: x.attributes.sort((atA, atB) =>
+        atA.name.localeCompare(atB.name),
+      ),
+    }))
+    .sort((elA, elB) => elA.name.localeCompare(elB.name)),
+  globalAttributes: jsonData.globalAttributes?.sort((atA, atB) =>
+    atA.name.localeCompare(atB.name),
+  ),
+};
+const orderedAttributeSets = Object.fromEntries(
+  Object.entries(attributeSets)
+    .reduce((prevValue, [key, value]) => {
+      prevValue.push([
+        key,
+        value.sort((atA, atB) => atA.name.localeCompare(atB.name)),
+      ]);
+      return prevValue;
+    }, new Array<[string, IAttributeData[]]>())
+    .sort(),
+);
+
+fs.writeFileSync(
+  "./dist/svg.json",
+  JSON.stringify(orderedData, null, 2),
+  "utf-8",
+);
 
 fs.writeFileSync(
   "./dist/attributeSets.json",
-  JSON.stringify(attributeSets, null, 2),
+  JSON.stringify(orderedAttributeSets, null, 2),
   "utf-8",
 );
