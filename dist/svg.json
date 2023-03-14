@@ -62220,6 +62220,21 @@
       "description": "The svg element can be used to embed an SVG fragment inside the current document (for example, an HTML document). This SVG fragment has its own viewport and coordinate system.",
       "attributes": [
         {
+          "name": "xmlns",
+          "description": "Specifies the XML Namespace of the document.",
+          "values": [
+            {
+              "name": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xmlns"
+            }
+          ]
+        },
+        {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
           "references": [

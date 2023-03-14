@@ -1,12 +1,15 @@
 {
-  "name": "vscode-svg",
+  "name": "@michijs/vscode-svg",
   "displayName": "SVG 2",
   "description": "SVG extension for VS Code",
   "author": "Lucas M. Segurado",
   "icon": "media/svg.png",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "publisher": "michijs",
-  "repository": "https://github.com/michijs/vscode-svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michijs/vscode-svg.git"
+  },
   "files": [
     "dist/"
   ],
@@ -24,8 +27,9 @@
   "scripts": {
     "start": "ts-node ./tasks/generateTypes.ts",
     "dist": "tsc",
-    "package": "vsce package",
-    "publish": "vsce publish",
+    "publish": "npm run publish-npm",
+    "package": "change-package-name vscode-svg && vsce package && change-package-name @michijs/vscode-svg",
+    "publish-vsce": "vsce publish",
     "link": "npm run dist && npm link --force && tsc -w"
   },
   "keywords": [
@@ -35,8 +39,9 @@
     "typescript"
   ],
   "devDependencies": {
-    "@vscode/web-custom-data": "0.4.5",
+    "change-package-name": "1.0.5",
     "@vscode/vsce": "2.18.0",
+    "@vscode/web-custom-data": "0.4.5",
     "lint-staged": "13.1.2",
     "rome": "11.0.0",
     "simple-git-hooks": "2.8.1",

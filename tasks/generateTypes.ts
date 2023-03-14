@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import { HTMLDataV1 } from "vscode-html-languageservice";
 import { attributes } from "./attributes";
-import { attributeSets } from "./attributeSets";
+import { attributeSets, GenericAttributes } from "./attributeSets";
 import { element, attribute } from "./utils";
 import { valueSets } from "./valueSets";
 
@@ -33,13 +33,20 @@ const jsonData: HTMLDataV1 = {
         attribute("target", "Where to display the linked URL.", "target"),
         attribute("type", "A MIME type for the linked URL."),
         ...attributeSets.PresentationAttributes,
-        ...attributeSets.FilterAttributes,
+        ...attributeSets.FilterPrimitiveAttributes,
+        ...attributeSets.TransferFunctionAttributes,
       ],
     ),
     element(
       "animate",
       "Provides a way to animate an attribute of an element over time.",
-      [...attributeSets.AnimationAttributes],
+      [
+        ...attributeSets.AnimationTargetElementAttributes,
+        ...attributeSets.AnimationAttributeTargetAttributes,
+        ...attributeSets.AnimationTimingAttributes,
+        ...attributeSets.AnimationValueAttributes,
+        ...attributeSets.AnimationAdditionAttributes,
+      ],
     ),
     element(
       "animateMotion",
@@ -54,7 +61,11 @@ const jsonData: HTMLDataV1 = {
           "This attribute defines the path of the motion, using the same syntax as the d attribute.",
         ),
         attributes.rotate,
-        ...attributeSets.AnimationAttributes,
+        ...attributeSets.AnimationTargetElementAttributes,
+        ...attributeSets.AnimationAttributeTargetAttributes,
+        ...attributeSets.AnimationTimingAttributes,
+        ...attributeSets.AnimationValueAttributes,
+        ...attributeSets.AnimationAdditionAttributes,
       ],
     ),
     element(
@@ -64,7 +75,11 @@ const jsonData: HTMLDataV1 = {
         attributes.from,
         attributes.to,
         attributes.by,
-        ...attributeSets.AnimationAttributes,
+        ...attributeSets.AnimationTargetElementAttributes,
+        ...attributeSets.AnimationAttributeTargetAttributes,
+        ...attributeSets.AnimationTimingAttributes,
+        ...attributeSets.AnimationValueAttributes,
+        ...attributeSets.AnimationAdditionAttributes,
       ],
     ),
     element("circle", "Create circles based on a center point and a radius.", [
@@ -720,7 +735,7 @@ const jsonData: HTMLDataV1 = {
       "svg",
       "The svg element can be used to embed an SVG fragment inside the current document (for example, an HTML document). This SVG fragment has its own viewport and coordinate system.",
       [
-        attribute("xmins", "Specifies the XML Namespace of the document.", [
+        attribute("xmlns", "Specifies the XML Namespace of the document.", [
           "http://www.w3.org/2000/svg",
         ]),
         attributes.preserveAspectRatio,
@@ -826,7 +841,7 @@ const jsonData: HTMLDataV1 = {
     ),
   ],
   valueSets,
-  globalAttributes: attributeSets.GenericAttributes,
+  globalAttributes: GenericAttributes,
 };
 
 fs.writeFileSync("./dist/svg.json", JSON.stringify(jsonData, null, 2), "utf-8");

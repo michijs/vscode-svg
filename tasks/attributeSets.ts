@@ -3,7 +3,7 @@ import { attributes } from "./attributes";
 import { attribute } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
 
-const SVGCoreAttributes = [
+const CoreAttributes = [
   attribute(
     "id",
     "Defines a unique identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).",
@@ -563,33 +563,34 @@ const AriaAttributes = htmlData.globalAttributes.filter(
 const SVGEvents = htmlData.globalAttributes.filter((x) =>
   x.name.startsWith("on"),
 ) as unknown as IAttributeData[];
+export const GenericAttributes = [
+  ...CoreAttributes,
+  ...StylingAttributes,
+  ...ConditionalProcessingAttributes,
+  ...SVGEvents,
+];
 export const attributeSets = {
-  // SVGCoreAttributes,
+  // CoreAttributes,
   // StylingAttributes,
-  GenericAttributes: [
-    ...SVGCoreAttributes,
-    ...StylingAttributes,
-    ...ConditionalProcessingAttributes,
-    ...SVGEvents,
-  ],
+  // GenericAttributes,
   PresentationAttributes,
   FilterPrimitiveAttributes,
   TransferFunctionAttributes,
-  FilterAttributes: [
-    ...FilterPrimitiveAttributes,
-    ...TransferFunctionAttributes,
-  ],
+  // FilterAttributes: [
+  //   ...FilterPrimitiveAttributes,
+  //   ...TransferFunctionAttributes,
+  // ],
   AnimationTargetElementAttributes,
   AnimationAttributeTargetAttributes,
   AnimationTimingAttributes,
-  // AnimationValueAttributes,
-  // AnimationAdditionAttributes,
-  AnimationAttributes: [
-    ...AnimationTargetElementAttributes,
-    ...AnimationAttributeTargetAttributes,
-    ...AnimationTimingAttributes,
-    ...AnimationValueAttributes,
-    ...AnimationAdditionAttributes,
-  ],
+  AnimationValueAttributes,
+  AnimationAdditionAttributes,
+  // AnimationAttributes: [
+  //   ...AnimationTargetElementAttributes,
+  //   ...AnimationAttributeTargetAttributes,
+  //   ...AnimationTimingAttributes,
+  //   ...AnimationValueAttributes,
+  //   ...AnimationAdditionAttributes,
+  // ],
   AriaAttributes,
 } satisfies Record<string, IAttributeData[]>;
