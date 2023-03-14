@@ -69,7 +69,57 @@
         },
         {
           "name": "type",
-          "description": "A MIME type for the linked URL.",
+          "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -1556,6 +1606,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -17338,6 +17438,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23570,6 +23720,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23580,6 +23780,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23652,6 +23902,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23662,6 +23962,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23734,6 +24084,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23744,6 +24144,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23816,6 +24266,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -23826,6 +24326,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -25447,6 +25997,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -34915,6 +35524,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -40771,6 +41430,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -45860,6 +46578,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -51492,6 +52269,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -60605,6 +61441,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -62190,6 +63076,56 @@
         {
           "name": "type",
           "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "translate"
+            },
+            {
+              "name": "scale"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "skewX"
+            },
+            {
+              "name": "skewY"
+            },
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            },
+            {
+              "name": "identity"
+            },
+            {
+              "name": "table"
+            },
+            {
+              "name": "discrete"
+            },
+            {
+              "name": "linear"
+            },
+            {
+              "name": "gamma"
+            },
+            {
+              "name": "fractalNoise"
+            },
+            {
+              "name": "turbulence"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -62237,6 +63173,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -65698,6 +66693,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",
@@ -76144,6 +77198,65 @@
         {
           "name": "preserveAspectRatio",
           "description": "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "xMinYMin meet"
+            },
+            {
+              "name": "xMinYMin slice"
+            },
+            {
+              "name": "xMinYMid meet"
+            },
+            {
+              "name": "xMinYMid slice"
+            },
+            {
+              "name": "xMinYMax meet"
+            },
+            {
+              "name": "xMinYMax slice"
+            },
+            {
+              "name": "xMidYMin meet"
+            },
+            {
+              "name": "xMidYMin slice"
+            },
+            {
+              "name": "xMidYMid meet"
+            },
+            {
+              "name": "xMidYMid slice"
+            },
+            {
+              "name": "xMidYMax meet"
+            },
+            {
+              "name": "xMidYMax slice"
+            },
+            {
+              "name": "xMaxYMin meet"
+            },
+            {
+              "name": "xMaxYMin slice"
+            },
+            {
+              "name": "xMaxYMid meet"
+            },
+            {
+              "name": "xMaxYMid slice"
+            },
+            {
+              "name": "xMaxYMax meet"
+            },
+            {
+              "name": "xMaxYMax slice"
+            }
+          ],
           "references": [
             {
               "name": "MDN Reference",

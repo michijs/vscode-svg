@@ -64,6 +64,24 @@ export const attributes = {
   type: attribute(
     "type",
     `Is a generic attribute and it has different meaning based on the context in which it's used.`,
+    [
+      "translate",
+      "scale",
+      "rotate",
+      "skewX",
+      "skewY",
+      "matrix",
+      "saturate",
+      "hueRotate",
+      "luminanceToAlpha",
+      "identity",
+      "table",
+      "discrete",
+      "linear",
+      "gamma",
+      "fractalNoise",
+      "turbulence",
+    ],
   ),
   by: attribute(
     "by",
@@ -105,6 +123,30 @@ export const attributes = {
   preserveAspectRatio: attribute(
     "preserveAspectRatio",
     "In some cases, typically when using the viewBox attribute, it is desirable that the graphics stretch to fit non-uniformly to take up the entire viewport. In other cases, it is desirable that uniform scaling be used for the purposes of preserving the aspect ratio of the graphics.",
+    [
+      "none",
+      ...(() => {
+        const amount = ["Min", "Mid", "Max"];
+        const meetOrSlice = ["meet", "slice"];
+        const arrayWithX = new Array<string>();
+        amount.forEach((y) => {
+          arrayWithX.push(`x${y}`);
+        });
+        const arrayWithXAndY = new Array<string>();
+        arrayWithX.forEach((x) => {
+          amount.forEach((y) => {
+            arrayWithXAndY.push(`${x}Y${y}`);
+          });
+        });
+        const finalArray = new Array<string>();
+        arrayWithXAndY.forEach((x) => {
+          meetOrSlice.forEach((y) => {
+            finalArray.push(`${x} ${y}`);
+          });
+        });
+        return finalArray;
+      })(),
+    ],
   ),
   result: attribute(
     "result",

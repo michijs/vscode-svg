@@ -31,7 +31,7 @@ const jsonData: HTMLDataV1 = {
           "The relationship of the target object to the link object.",
         ),
         attribute("target", "Where to display the linked URL.", "target"),
-        attribute("type", "A MIME type for the linked URL."),
+        attributes.type,
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
         ...attributeSets.TransferFunctionAttributes,

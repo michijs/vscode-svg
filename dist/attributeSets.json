@@ -1483,6 +1483,56 @@
     {
       "name": "type",
       "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+      "values": [
+        {
+          "name": "translate"
+        },
+        {
+          "name": "scale"
+        },
+        {
+          "name": "rotate"
+        },
+        {
+          "name": "skewX"
+        },
+        {
+          "name": "skewY"
+        },
+        {
+          "name": "matrix"
+        },
+        {
+          "name": "saturate"
+        },
+        {
+          "name": "hueRotate"
+        },
+        {
+          "name": "luminanceToAlpha"
+        },
+        {
+          "name": "identity"
+        },
+        {
+          "name": "table"
+        },
+        {
+          "name": "discrete"
+        },
+        {
+          "name": "linear"
+        },
+        {
+          "name": "gamma"
+        },
+        {
+          "name": "fractalNoise"
+        },
+        {
+          "name": "turbulence"
+        }
+      ],
       "references": [
         {
           "name": "MDN Reference",

@@ -60,7 +60,7 @@ const PresentationAttributes = [
   attribute(
     "baseline-shift",
     "The baseline-shift attribute allows repositioning of the dominant-baseline relative to the dominant-baseline of the parent text content element. The shifted object might be a sub- or superscript.",
-    ["auto", "baseline", "super", "sub", "inherit"],
+    // ["auto", "baseline", "super", "sub", "inherit"], includes numbers
   ),
   attribute(
     "clip",
@@ -157,19 +157,15 @@ const PresentationAttributes = [
     "dominant-baseline",
     "The dominant-baseline attribute is used to determine or re-determine a scaled-baseline-table. A scaled-baseline-table is a compound value with three components: a baseline-identifier for the dominant-baseline, a baseline-table and a baseline-table font-size. Some values of the property re-determine all three values; other only re-establish the baseline-table font-size. When the initial value, auto, would give an undesired result, this property can be used to explicitly set the desire scaled-baseline-table.",
     [
-      "     auto",
-      "use-script",
-      "no-change",
-      "reset-size",
-      "ideographic",
+      "auto",
+      "text-bottom",
       "alphabetic",
-      "hanging",
-      "mathematical",
-      "central",
+      "ideographic",
       "middle",
-      "text-after-edge",
-      "text-before-edge",
-      "inherit",
+      "central",
+      "mathematical",
+      "hanging",
+      "text-top",
     ],
   ),
   attribute(
@@ -486,12 +482,12 @@ const AnimationTimingAttributes = [
   attribute(
     "dur",
     "This attribute indicates the simple duration of the animation.",
-    ["indefinite"],
+    // ["indefinite","media"],
   ),
   attribute(
     "repeatCount",
     "This attribute indicates the number of time the animation will take place.",
-    ["indefinite"],
+    // ["indefinite","media"],
   ),
   attributes.begin,
   attribute(
