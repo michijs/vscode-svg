@@ -63,14 +63,9 @@ const PresentationAttributes = [
     // ["auto", "baseline", "super", "sub", "inherit"], includes numbers
   ),
   attribute(
-    "clip",
-    "The clip attribute has the same parameter values as defined for the css clip property. Unitless values, which indicate current user coordinates, are permitted on the coordinate values on the <shape>. The value of auto defines a clipping path along the bounds of the viewport created by the given element.",
-    ["auto", "inherit"],
-  ),
-  attribute(
     "clip-path",
     "The clip-path attribute binds the element it is applied to with a given <clipPath> element",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "clip-rule",
@@ -80,7 +75,7 @@ const PresentationAttributes = [
   attribute(
     "color",
     "The color attribute is used to provide a potential indirect value (currentColor) for the fill, stroke, stop-color, flood-color and lighting-color attributes.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "color-interpolation",
@@ -171,12 +166,12 @@ const PresentationAttributes = [
   attribute(
     "fill",
     `The fill attribute has two meanings based on the context it's used.`,
-    ["remove", "freeze"],
+    // ["remove", "freeze"],
   ),
   attribute(
     "fill-opacity",
     "This attribute specifies the opacity of the color or the content the current object is filled with.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "fill-rule",
@@ -186,32 +181,32 @@ const PresentationAttributes = [
   attribute(
     "filter",
     "The filter attribute defines the filter effects define by the <filter> element that shall be applied to its element.",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "flood-color",
     "The flood-color attribute indicates what color to use to flood the current filter primitive subregion defined through the <feflood> element. The keyword currentColor and ICC colors can be specified in the same manner as within a <paint> specification for the fill and stroke attributes.",
-    ["currentColor", "inherit"],
+    // ["currentColor", "inherit"],
   ),
   attribute(
     "flood-opacity",
     "The flood-opacity attribute indicates the opacity value to use across the current filter primitive subregion defined through the <feflood> element.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "font-family",
     "The font-family attribute indicates which font family will be used to render the text, specified as a prioritized list of font family names and/or generic family names.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "font-size",
     "The font-size attribute refers to the size of the font from baseline to baseline when multiple lines of text are set solid in a multiline layout environment. For SVG, if a <length> is provided without a unit identifier (e.g., an unqualified number such as 128), the browser processes the <length> as a height value in the current user coordinate system.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "font-size-adjust",
     "The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "font-stretch",
@@ -234,12 +229,12 @@ const PresentationAttributes = [
   attribute(
     "font-style",
     "The font-style attribute specifies whether the text is to be rendered using a normal, italic or oblique face.",
-    ["normal", "italic", "oblique", "inherit"],
+    // ["normal", "italic", "oblique", "inherit"],
   ),
   attribute(
     "font-variant",
     "The font-variant attribute indicates whether the text is to be rendered using the normal glyphs for lowercase characters or using small-caps glyphs for lowercase characters.",
-    ["normal", "small-caps", "inherit"],
+    // ["normal", "small-caps", "inherit"],
   ),
   attribute(
     "font-weight",
@@ -264,52 +259,52 @@ const PresentationAttributes = [
   attribute(
     "image-rendering",
     "The image-rendering attribute provides a hint to the browser about how to make speed vs. quality tradeoffs as it performs image processing.",
-    ["auto", "optimizeSpeed", "optimizeQuality", "inherit"],
+    ["auto", "optimizeSpeed", "optimizeQuality"],
   ),
   attribute(
     "kerning",
     "The kerning attribute indicates whether the browser should adjust inter-glyph spacing based on kerning tables that are included in the relevant font (i.e., enable auto-kerning) or instead disable auto-kerning and instead set inter-character spacing to a specific length (typically, zero).",
-    ["auto", "inherit"],
+    // ["auto", "inherit"],
   ),
   attribute(
     "letter-spacing",
     "The letter-spacing attribute specifies spacing behavior between text characters supplemental to any spacing due to the kerning attribute.",
-    ["normal", "inherit"],
+    // ["normal", "inherit"],
   ),
   attribute(
     "lighting-color",
     "The lighting-color attribute defines the color of the light source for filter primitives elements <fediffuselighting> and <fespecularlighting>.",
-    ["currentColor", "inherit"],
+    // ["currentColor", "inherit"],
   ),
   attribute(
     "marker-end",
     "The marker-end defines the arrowhead or polymarker that will be drawn at the final vertex of the given <path> element or basic shape. Note that for a <path> element which ends with a closed sub-path, the last vertex is the same as the initial vertex on the given sub-path. In this case, if marker-end does not equal none, then it is possible that two markers will be rendered on the given vertex. One way to prevent this is to set marker-end to none. (Note that the same comment applies to <polygon> elements.)",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "marker-mid",
     "The marker-mid defines the arrowhead or polymarker that shall be drawn at every vertex other than the first and last vertex of the given <path> element or basic shape.",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "marker-start",
     "The marker-start attribute defines the arrowhead or polymarker that will be drawn at the first vertex of the given <path> element or basic shape.",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "mask",
     "The mask attribute binds the element it is applied to with a given <mask> element.",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "opacity",
     "The opacity attribute specifies the transparency of an object or of a group of objects, that is, the degree to which the background behind the element is overlaid.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "overflow",
     "The overflow attribute has the same parameter values as defined for the css overflow property.",
-    ["visible", "hidden", "scroll", "auto", "inherit"],
+    ["visible", "hidden", "scroll", "auto"],
   ),
   attribute(
     "pointer-events",
@@ -330,17 +325,17 @@ const PresentationAttributes = [
   attribute(
     "shape-rendering",
     "The creator of SVG content might want to provide a hint about what tradeoffs to make as the browser renders <path> element or basic shapes. The shape-rendering attribute provides these hints.",
-    ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision", "inherit"],
+    ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision"],
   ),
   attribute(
     "stop-color",
     "The stop-color attribute indicates what color to use at that gradient stop. The keyword currentColor and ICC colors can be specified in the same manner as within a <paint> specification for the fill and stroke attributes.",
-    ["currentColor", "inherit"],
+    // ["currentColor", "inherit"],
   ),
   attribute(
     "stop-opacity",
     "The stop-opacity attribute defines the opacity of a given gradient stop.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "stroke",
@@ -349,42 +344,42 @@ const PresentationAttributes = [
   attribute(
     "stroke-dasharray",
     "the stroke-dasharray attribute controls the pattern of dashes and gaps used to stroke paths.",
-    ["none", "inherit"],
+    // ["none", "inherit"],
   ),
   attribute(
     "stroke-dashoffset",
     "the stroke-dashoffset attribute specifies the distance into the dash pattern to start the dash.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "stroke-linecap",
     "the stroke-linecap attribute specifies the shape to be used at the end of open subpaths when they are stroked.",
-    ["butt", "round", "square", "inherit"],
+    ["butt", "round", "square"],
   ),
   attribute(
     "stroke-linejoin",
     "the stroke-linejoin attribute specifies the shape to be used at the corners of paths or basic shapes when they are stroked.",
-    ["miter", "round", "bevel", "inherit"],
+    ["miter", "round", "bevel", "miter-clip", "round"],
   ),
   attribute(
     "stroke-miterlimit",
     "When two line segments meet at a sharp angle and miter joins have been specified for stroke-linejoin, it is possible for the miter to extend far beyond the thickness of the line stroking the path. The stroke-miterlimit imposes a limit on the ratio of the miter length to the stroke-width. When the limit is exceeded, the join is converted from a miter to a bevel.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "stroke-opacity",
     "the stroke-opacity attribute specifies the opacity of the outline on the current object. Its default value is 1.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "stroke-width",
     "the stroke-width attribute specifies the width of the outline on the current object. Its default value is 1. If a <percentage> is used, the value represents a percentage of the current viewport. If a value of 0 is used the outline will never be drawn.",
-    ["inherit"],
+    // ["inherit"],
   ),
   attribute(
     "text-anchor",
     "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
-    ["start", "middle", "end", "inherit"],
+    ["start", "middle", "end"],
   ),
   attribute(
     "text-decoration",
@@ -421,7 +416,7 @@ const PresentationAttributes = [
   attribute(
     "word-spacing",
     "The word-spacing attribute specifies spacing behavior between words.",
-    ["normal", "inherit"],
+    // ["normal", "inherit"],
   ),
   attribute(
     "writing-mode",
@@ -515,7 +510,7 @@ const AnimationTimingAttributes = [
   attribute(
     "fill",
     `The fill attribute has two meanings based on the context it's used.`,
-    ["remove", "freeze"],
+    // ["remove", "freeze"],
   ),
 ];
 

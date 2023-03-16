@@ -116,14 +116,6 @@
     {
       "name": "fill",
       "description": "The fill attribute has two meanings based on the context it's used.",
-      "values": [
-        {
-          "name": "remove"
-        },
-        {
-          "name": "freeze"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1102,34 +1094,8 @@
       ]
     },
     {
-      "name": "clip",
-      "description": "The clip attribute has the same parameter values as defined for the css clip property. Unitless values, which indicate current user coordinates, are permitted on the coordinate values on the <shape>. The value of auto defines a clipping path along the bounds of the viewport created by the given element.",
-      "values": [
-        {
-          "name": "auto"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clip"
-        }
-      ]
-    },
-    {
       "name": "clip-path",
       "description": "The clip-path attribute binds the element it is applied to with a given <clipPath> element",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1161,11 +1127,6 @@
     {
       "name": "color",
       "description": "The color attribute is used to provide a potential indirect value (currentColor) for the fill, stroke, stop-color, flood-color and lighting-color attributes.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1455,14 +1416,6 @@
     {
       "name": "fill",
       "description": "The fill attribute has two meanings based on the context it's used.",
-      "values": [
-        {
-          "name": "remove"
-        },
-        {
-          "name": "freeze"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1473,11 +1426,6 @@
     {
       "name": "fill-opacity",
       "description": "This attribute specifies the opacity of the color or the content the current object is filled with.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1509,14 +1457,6 @@
     {
       "name": "filter",
       "description": "The filter attribute defines the filter effects define by the <filter> element that shall be applied to its element.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1527,14 +1467,6 @@
     {
       "name": "flood-color",
       "description": "The flood-color attribute indicates what color to use to flood the current filter primitive subregion defined through the <feflood> element. The keyword currentColor and ICC colors can be specified in the same manner as within a <paint> specification for the fill and stroke attributes.",
-      "values": [
-        {
-          "name": "currentColor"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1545,11 +1477,6 @@
     {
       "name": "flood-opacity",
       "description": "The flood-opacity attribute indicates the opacity value to use across the current filter primitive subregion defined through the <feflood> element.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1560,11 +1487,6 @@
     {
       "name": "font-family",
       "description": "The font-family attribute indicates which font family will be used to render the text, specified as a prioritized list of font family names and/or generic family names.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1575,11 +1497,6 @@
     {
       "name": "font-size",
       "description": "The font-size attribute refers to the size of the font from baseline to baseline when multiple lines of text are set solid in a multiline layout environment. For SVG, if a <length> is provided without a unit identifier (e.g., an unqualified number such as 128), the browser processes the <length> as a height value in the current user coordinate system.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1590,14 +1507,6 @@
     {
       "name": "font-size-adjust",
       "description": "The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1656,20 +1565,6 @@
     {
       "name": "font-style",
       "description": "The font-style attribute specifies whether the text is to be rendered using a normal, italic or oblique face.",
-      "values": [
-        {
-          "name": "normal"
-        },
-        {
-          "name": "italic"
-        },
-        {
-          "name": "oblique"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1680,17 +1575,6 @@
     {
       "name": "font-variant",
       "description": "The font-variant attribute indicates whether the text is to be rendered using the normal glyphs for lowercase characters or using small-caps glyphs for lowercase characters.",
-      "values": [
-        {
-          "name": "normal"
-        },
-        {
-          "name": "small-caps"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1764,9 +1648,6 @@
         },
         {
           "name": "optimizeQuality"
-        },
-        {
-          "name": "inherit"
         }
       ],
       "references": [
@@ -1779,14 +1660,6 @@
     {
       "name": "kerning",
       "description": "The kerning attribute indicates whether the browser should adjust inter-glyph spacing based on kerning tables that are included in the relevant font (i.e., enable auto-kerning) or instead disable auto-kerning and instead set inter-character spacing to a specific length (typically, zero).",
-      "values": [
-        {
-          "name": "auto"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1797,14 +1670,6 @@
     {
       "name": "letter-spacing",
       "description": "The letter-spacing attribute specifies spacing behavior between text characters supplemental to any spacing due to the kerning attribute.",
-      "values": [
-        {
-          "name": "normal"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1815,14 +1680,6 @@
     {
       "name": "lighting-color",
       "description": "The lighting-color attribute defines the color of the light source for filter primitives elements <fediffuselighting> and <fespecularlighting>.",
-      "values": [
-        {
-          "name": "currentColor"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1833,14 +1690,6 @@
     {
       "name": "marker-end",
       "description": "The marker-end defines the arrowhead or polymarker that will be drawn at the final vertex of the given <path> element or basic shape. Note that for a <path> element which ends with a closed sub-path, the last vertex is the same as the initial vertex on the given sub-path. In this case, if marker-end does not equal none, then it is possible that two markers will be rendered on the given vertex. One way to prevent this is to set marker-end to none. (Note that the same comment applies to <polygon> elements.)",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1851,14 +1700,6 @@
     {
       "name": "marker-mid",
       "description": "The marker-mid defines the arrowhead or polymarker that shall be drawn at every vertex other than the first and last vertex of the given <path> element or basic shape.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1869,14 +1710,6 @@
     {
       "name": "marker-start",
       "description": "The marker-start attribute defines the arrowhead or polymarker that will be drawn at the first vertex of the given <path> element or basic shape.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1887,14 +1720,6 @@
     {
       "name": "mask",
       "description": "The mask attribute binds the element it is applied to with a given <mask> element.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1905,11 +1730,6 @@
     {
       "name": "opacity",
       "description": "The opacity attribute specifies the transparency of an object or of a group of objects, that is, the degree to which the background behind the element is overlaid.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -1932,9 +1752,6 @@
         },
         {
           "name": "auto"
-        },
-        {
-          "name": "inherit"
         }
       ],
       "references": [
@@ -2001,9 +1818,6 @@
         },
         {
           "name": "geometricPrecision"
-        },
-        {
-          "name": "inherit"
         }
       ],
       "references": [
@@ -2016,14 +1830,6 @@
     {
       "name": "stop-color",
       "description": "The stop-color attribute indicates what color to use at that gradient stop. The keyword currentColor and ICC colors can be specified in the same manner as within a <paint> specification for the fill and stroke attributes.",
-      "values": [
-        {
-          "name": "currentColor"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2034,11 +1840,6 @@
     {
       "name": "stop-opacity",
       "description": "The stop-opacity attribute defines the opacity of a given gradient stop.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2059,14 +1860,6 @@
     {
       "name": "stroke-dasharray",
       "description": "the stroke-dasharray attribute controls the pattern of dashes and gaps used to stroke paths.",
-      "values": [
-        {
-          "name": "none"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2077,11 +1870,6 @@
     {
       "name": "stroke-dashoffset",
       "description": "the stroke-dashoffset attribute specifies the distance into the dash pattern to start the dash.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2101,9 +1889,6 @@
         },
         {
           "name": "square"
-        },
-        {
-          "name": "inherit"
         }
       ],
       "references": [
@@ -2127,7 +1912,10 @@
           "name": "bevel"
         },
         {
-          "name": "inherit"
+          "name": "miter-clip"
+        },
+        {
+          "name": "round"
         }
       ],
       "references": [
@@ -2140,11 +1928,6 @@
     {
       "name": "stroke-miterlimit",
       "description": "When two line segments meet at a sharp angle and miter joins have been specified for stroke-linejoin, it is possible for the miter to extend far beyond the thickness of the line stroking the path. The stroke-miterlimit imposes a limit on the ratio of the miter length to the stroke-width. When the limit is exceeded, the join is converted from a miter to a bevel.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2155,11 +1938,6 @@
     {
       "name": "stroke-opacity",
       "description": "the stroke-opacity attribute specifies the opacity of the outline on the current object. Its default value is 1.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2170,11 +1948,6 @@
     {
       "name": "stroke-width",
       "description": "the stroke-width attribute specifies the width of the outline on the current object. Its default value is 1. If a <percentage> is used, the value represents a percentage of the current viewport. If a value of 0 is used the outline will never be drawn.",
-      "values": [
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -2194,9 +1967,6 @@
         },
         {
           "name": "end"
-        },
-        {
-          "name": "inherit"
         }
       ],
       "references": [
@@ -2327,14 +2097,6 @@
     {
       "name": "word-spacing",
       "description": "The word-spacing attribute specifies spacing behavior between words.",
-      "values": [
-        {
-          "name": "normal"
-        },
-        {
-          "name": "inherit"
-        }
-      ],
       "references": [
         {
           "name": "MDN Reference",
