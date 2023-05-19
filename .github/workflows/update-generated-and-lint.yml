@@ -1,4 +1,4 @@
-name: "Update generated"
+name: "Update generated and lint"
 
 on: [push]
 
@@ -42,3 +42,9 @@ jobs:
       - name: Push changes to repository
         run: |
           git push origin || echo "No changes to push"
+  lint:
+    uses: michijs/.github/.github/workflows/lint.yml@main
+    needs: submit-changes
+    name: "Run lint"
+    secrets:
+      GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
