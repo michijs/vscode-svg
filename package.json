@@ -27,7 +27,6 @@
   "scripts": {
     "start": "ts-node ./tasks/generateTypes.ts",
     "dist": "tsc",
-    "publish": "npm run start && npm publish --access public",
     "package": "change-package-name vscode-svg && vsce package && change-package-name @michijs/vscode-svg",
     "publish-vsce": "vsce publish",
     "link": "npm run dist && npm link --force && tsc -w"
