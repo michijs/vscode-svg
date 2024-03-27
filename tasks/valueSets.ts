@@ -1,4 +1,4 @@
-import { IValueSet } from "vscode-html-languageservice";
+import type { IValueSet } from "vscode-html-languageservice";
 import { valueSet } from "./utils";
 
 export const valueSets: IValueSet[] = [

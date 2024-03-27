@@ -1,4 +1,4 @@
-import { IAttributeData } from "vscode-html-languageservice";
+import type { IAttributeData } from "vscode-html-languageservice";
 import { attributes } from "./attributes";
 import { attribute, type } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
