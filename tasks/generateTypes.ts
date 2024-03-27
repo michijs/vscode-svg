@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
+import type { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
 import { attributes } from "./attributes";
 import { attributeSets, GenericAttributes } from "./attributeSets";
 import { element, attribute, type } from "./utils";
