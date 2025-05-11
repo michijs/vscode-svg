@@ -46,7 +46,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeName"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S4",
+        "SM3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "attributeType",
@@ -67,7 +81,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeType"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S4",
+        "SM3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     }
   ],
   "AnimationTargetElementAttributes": [
@@ -77,9 +105,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/href"
         }
-      ]
+      ],
+      "browsers": [
+        "C50",
+        "CA50",
+        "E12",
+        "FF1.5",
+        "FFA4",
+        "S12.1",
+        "SM12.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2019-03-25",
+        "baseline_high_date": "2021-09-25"
+      }
     }
   ],
   "AnimationTimingAttributes": [
@@ -99,9 +141,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dur"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/dur"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S4",
+        "SM3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "end",
@@ -119,9 +175,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/fill"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "max",
@@ -149,9 +219,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatCount"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/repeatCount"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S4",
+        "SM3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "repeatDur",
@@ -199,7 +283,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/by"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "calcMode",
@@ -223,7 +321,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcMode"
         }
-      ]
+      ],
+      "browsers": [
+        "C19",
+        "CA25",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "from",
@@ -231,9 +343,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/from"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/From"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E79",
+        "FF4",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "keySplines",
@@ -263,7 +389,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/to"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E≤79",
+        "FF4",
+        "FFA4",
+        "S3",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-01-15",
+        "baseline_high_date": "≤2022-07-15"
+      }
     },
     {
       "name": "values",
@@ -430,7 +570,13 @@
       "description": {
         "kind": "markdown",
         "value": "Identifies the [element](https://www.w3.org/TR/wai-aria-1.1/#dfn-element) that provides a detailed, extended description for the [object](https://www.w3.org/TR/wai-aria-1.1/#dfn-object). See related [`aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/aria-details"
+        }
+      ]
     },
     {
       "name": "aria-disabled",
@@ -561,7 +707,13 @@
       "description": {
         "kind": "markdown",
         "value": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/aria-keyshortcuts"
+        }
+      ]
     },
     {
       "name": "aria-label",
@@ -914,7 +1066,13 @@
     },
     {
       "name": "role",
-      "valueSet": "roles"
+      "valueSet": "roles",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/role"
+        }
+      ]
     }
   ],
   "FilterPrimitiveAttributes": [
@@ -926,7 +1084,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E79",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "result",
@@ -1008,7 +1180,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E79",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "x",
@@ -1018,7 +1204,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "y",
@@ -1028,7 +1228,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     }
   ],
   "PresentationAttributes": [
@@ -1079,9 +1293,19 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/alignment-baseline"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/alignment-baseline"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": false
+      }
     },
     {
       "name": "baseline-shift",
@@ -1089,9 +1313,19 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseline-shift"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/baseline-shift"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": false
+      }
     },
     {
       "name": "clip-path",
@@ -1099,9 +1333,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clip-path"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/clip-path"
         }
-      ]
+      ],
+      "browsers": [
+        "C23",
+        "CA25",
+        "E12",
+        "FF52",
+        "FFA52",
+        "S7",
+        "SM7"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2017-03-07",
+        "baseline_high_date": "2019-09-07"
+      }
     },
     {
       "name": "clip-rule",
@@ -1120,9 +1368,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clip-rule"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/clip-rule"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "color",
@@ -1130,9 +1392,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/color"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "color-interpolation",
@@ -1154,9 +1430,16 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-interpolation"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/color-interpolation"
         }
-      ]
+      ],
+      "browsers": [
+        "FF≤72",
+        "FFA≤79"
+      ],
+      "status": {
+        "baseline": false
+      }
     },
     {
       "name": "color-interpolation-filters",
@@ -1178,9 +1461,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-interpolation-filters"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/color-interpolation-filters"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "color-profile",
@@ -1283,9 +1580,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cursor"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/cursor"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA95",
+        "S1.2",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2021-12-07",
+        "baseline_high_date": "2024-06-07"
+      }
     },
     {
       "name": "direction",
@@ -1304,9 +1615,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/direction"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/direction"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "display",
@@ -1370,9 +1695,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/display"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/display"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "dominant-baseline",
@@ -1409,9 +1748,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dominant-baseline"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/dominant-baseline"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "fill",
@@ -1421,7 +1774,21 @@
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E79",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "fill-opacity",
@@ -1429,9 +1796,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-opacity"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/fill-opacity"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "fill-rule",
@@ -1450,9 +1831,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/fill-rule"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤15",
+        "CA18",
+        "E79",
+        "FF18",
+        "FFA18",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "filter",
@@ -1460,9 +1855,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filter"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/filter"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤53",
+        "CA≤53",
+        "E79",
+        "FF35",
+        "FFA35",
+        "S≤10.1",
+        "SM≤10.3"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "flood-color",
@@ -1470,9 +1879,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-color"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/flood-color"
         }
-      ]
+      ],
+      "browsers": [
+        "C5",
+        "CA18",
+        "E12",
+        "FF3",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "flood-opacity",
@@ -1480,9 +1903,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-opacity"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/flood-opacity"
         }
-      ]
+      ],
+      "browsers": [
+        "C5",
+        "CA18",
+        "E12",
+        "FF3",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "font-family",
@@ -1490,9 +1927,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-family"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-family"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "font-size",
@@ -1500,9 +1951,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-size"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-size"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "font-size-adjust",
@@ -1510,9 +1975,22 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-size-adjust"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-size-adjust"
         }
-      ]
+      ],
+      "browsers": [
+        "C127",
+        "CA127",
+        "E127",
+        "FF3",
+        "FFA4",
+        "S16.4",
+        "SM16.4"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2024-07-25"
+      }
     },
     {
       "name": "font-stretch",
@@ -1558,9 +2036,21 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-stretch"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-stretch"
         }
-      ]
+      ],
+      "browsers": [
+        "C60",
+        "CA60",
+        "E12",
+        "FF9",
+        "FFA9",
+        "S11",
+        "SM11"
+      ],
+      "status": {
+        "baseline": false
+      }
     },
     {
       "name": "font-style",
@@ -1568,9 +2058,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-style"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-style"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "font-variant",
@@ -1578,9 +2082,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-variant"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-variant"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "font-weight",
@@ -1632,9 +2150,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-weight"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-weight"
         }
-      ]
+      ],
+      "browsers": [
+        "C2",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "image-rendering",
@@ -1653,9 +2185,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/image-rendering"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/image-rendering"
         }
-      ]
+      ],
+      "browsers": [
+        "C13",
+        "CA18",
+        "E79",
+        "FF3.6",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "kerning",
@@ -1673,9 +2219,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/letter-spacing"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/letter-spacing"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "lighting-color",
@@ -1683,9 +2243,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lighting-color"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/lighting-color"
         }
-      ]
+      ],
+      "browsers": [
+        "C5",
+        "CA18",
+        "E12",
+        "FF3",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "marker-end",
@@ -1693,9 +2267,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/marker-end"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/marker-end"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "marker-mid",
@@ -1703,9 +2291,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/marker-mid"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/marker-mid"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "marker-start",
@@ -1713,9 +2315,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/marker-start"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/marker-start"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "mask",
@@ -1723,9 +2339,22 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/mask"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/mask"
         }
-      ]
+      ],
+      "browsers": [
+        "C120",
+        "CA120",
+        "E120",
+        "FF53",
+        "FFA53",
+        "S15.4",
+        "SM15.4"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-12-07"
+      }
     },
     {
       "name": "opacity",
@@ -1733,9 +2362,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/opacity"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/opacity"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S2",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "overflow",
@@ -1757,9 +2400,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/overflow"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/overflow"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "pointer-events",
@@ -1799,9 +2456,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointer-events"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/pointer-events"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1.5",
+        "FFA4",
+        "S4",
+        "SM3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "shape-rendering",
@@ -1823,9 +2494,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/shape-rendering"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "stop-color",
@@ -1833,9 +2518,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stop-color"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stop-color"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM3"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "stop-opacity",
@@ -1843,9 +2542,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stop-opacity"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stop-opacity"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1.5",
+        "FFA4",
+        "S3",
+        "SM14"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-09-16",
+        "baseline_high_date": "2023-03-16"
+      }
     },
     {
       "name": "stroke",
@@ -1853,9 +2566,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "stroke-dasharray",
@@ -1863,9 +2590,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-dasharray"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "stroke-dashoffset",
@@ -1873,9 +2614,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dashoffset"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-dashoffset"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "stroke-linecap",
@@ -1894,9 +2649,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linecap"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-linecap"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "stroke-linejoin",
@@ -1921,9 +2690,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linejoin"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-linejoin"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "stroke-miterlimit",
@@ -1931,9 +2714,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-miterlimit"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-miterlimit"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "stroke-opacity",
@@ -1941,9 +2738,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-opacity"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-opacity"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "stroke-width",
@@ -1951,9 +2762,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-width"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/stroke-width"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF1",
+        "FFA4",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-03-24",
+        "baseline_high_date": "≤2022-09-24"
+      }
     },
     {
       "name": "text-anchor",
@@ -1972,9 +2797,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/text-anchor"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "text-decoration",
@@ -2002,9 +2841,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-decoration"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/text-decoration"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "text-rendering",
@@ -2029,9 +2882,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-rendering"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/text-rendering"
         }
-      ]
+      ],
+      "browsers": [
+        "C4",
+        "CA18",
+        "E79",
+        "FF1",
+        "FFA46",
+        "S5",
+        "SM4.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2020-01-15",
+        "baseline_high_date": "2022-07-15"
+      }
     },
     {
       "name": "transform",
@@ -2039,9 +2906,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/transform"
         }
-      ]
+      ],
+      "browsers": [
+        "C36",
+        "CA36",
+        "E12",
+        "FF≤16",
+        "FFA≤16",
+        "S9",
+        "SM9"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-09-30",
+        "baseline_high_date": "2018-03-30"
+      }
     },
     {
       "name": "vector-effect",
@@ -2066,9 +2947,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/vector-effect"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/vector-effect"
         }
-      ]
+      ],
+      "browsers": [
+        "C≤80",
+        "CA≤80",
+        "E≤80",
+        "FF≤72",
+        "FFA≤79",
+        "S≤13.1",
+        "SM≤13.4"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "≤2020-07-28",
+        "baseline_high_date": "≤2023-01-28"
+      }
     },
     {
       "name": "visibility",
@@ -2090,9 +2985,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/visibility"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/visibility"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "word-spacing",
@@ -2100,9 +3009,23 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/word-spacing"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/word-spacing"
         }
-      ]
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "writing-mode",
@@ -2133,25 +3056,29 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/writing-mode"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/writing-mode"
         }
-      ]
+      ],
+      "browsers": [
+        "C48",
+        "CA48",
+        "E12",
+        "FF41",
+        "FFA41",
+        "S10.1",
+        "SM10.3"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2017-03-27",
+        "baseline_high_date": "2019-09-27"
+      }
     }
   ],
   "TransferFunctionAttributes": [
     {
       "name": "amplitude",
       "description": "Controls the amplitude of the gamma function of a component transfer element when its type attribute is gamma.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/amplitude"
-        }
-      ]
-    },
-    {
-      "name": "amplitude",
-      "description": "Defines the exponent of the gamma function.",
       "references": [
         {
           "name": "MDN Reference",

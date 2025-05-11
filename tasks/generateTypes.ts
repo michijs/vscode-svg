@@ -4,6 +4,7 @@ import { attributes } from "./attributes";
 import { attributeSets, GenericAttributes } from "./attributeSets";
 import { element, attribute, type } from "./utils";
 import { valueSets } from "./valueSets";
+import { addCompatData, lookForMissingTags } from "./compatData";
 
 const jsonData: HTMLDataV1 = {
   version: 1.1,
@@ -848,12 +849,15 @@ const jsonData: HTMLDataV1 = {
 const orderedData: HTMLDataV1 = {
   ...jsonData,
   tags: jsonData.tags
-    ?.map((x) => ({
-      ...x,
-      attributes: x.attributes.sort((atA, atB) =>
-        atA.name.localeCompare(atB.name),
-      ),
-    }))
+    ?.map((x) => {
+      addCompatData(x)
+      return ({
+        ...x,
+        attributes: x.attributes.sort((atA, atB) =>
+          atA.name.localeCompare(atB.name),
+        ),
+      })
+    })
     .sort((elA, elB) => elA.name.localeCompare(elB.name)),
   globalAttributes: jsonData.globalAttributes?.sort((atA, atB) =>
     atA.name.localeCompare(atB.name),
@@ -882,3 +886,5 @@ fs.writeFileSync(
   JSON.stringify(orderedAttributeSets, null, 2),
   "utf-8",
 );
+
+lookForMissingTags(orderedData.tags)

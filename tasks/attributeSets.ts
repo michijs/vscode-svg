@@ -453,7 +453,6 @@ const TransferFunctionAttributes = [
     "Controls the amplitude of the gamma function of a component transfer element when its type attribute is gamma.",
   ),
   attribute("exponent", "Defines the exponent of the gamma function."),
-  attribute("amplitude", "Defines the exponent of the gamma function."),
 ];
 
 const AnimationTargetElementAttributes = [

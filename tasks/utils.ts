@@ -1,19 +1,10 @@
-import type { IAttributeData } from "vscode-html-languageservice";
+import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 
-const mdnReference = (url?: string) =>
-  url
-    ? [
-        {
-          name: "MDN Reference",
-          url,
-        },
-      ]
-    : undefined;
 export const attribute = (
   name: string,
   description: string,
   values?: string[] | string,
-) => ({
+): IAttributeData => ({
   name,
   description,
   values: Array.isArray(values)
@@ -22,21 +13,15 @@ export const attribute = (
       }))
     : undefined,
   valueSet: !Array.isArray(values) ? values : undefined,
-  references: mdnReference(
-    `https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/${name}`,
-  ),
 });
 export const element = (
   name: string,
   description,
   attributes: IAttributeData[] = [],
-) => ({
+): ITagData => ({
   name,
   description,
   attributes,
-  references: mdnReference(
-    `https://developer.mozilla.org/en-US/docs/Web/SVG/Element/${name}`,
-  ),
 });
 
 export const valueSet = (name: string, values: string[]) => ({
