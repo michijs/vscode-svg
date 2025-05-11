@@ -850,13 +850,13 @@ const orderedData: HTMLDataV1 = {
   ...jsonData,
   tags: jsonData.tags
     ?.map((x) => {
-      addCompatData(x)
-      return ({
+      addCompatData(x);
+      return {
         ...x,
         attributes: x.attributes.sort((atA, atB) =>
           atA.name.localeCompare(atB.name),
         ),
-      })
+      };
     })
     .sort((elA, elB) => elA.name.localeCompare(elB.name)),
   globalAttributes: jsonData.globalAttributes?.sort((atA, atB) =>
@@ -887,4 +887,4 @@ fs.writeFileSync(
   "utf-8",
 );
 
-lookForMissingTags(orderedData.tags)
+lookForMissingTags(orderedData.tags);
