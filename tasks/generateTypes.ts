@@ -887,4 +887,4 @@ fs.writeFileSync(
   "utf-8",
 );
 
-lookForMissingTags(orderedData.tags!)
+lookForMissingTags(orderedData.tags!);
