@@ -1,12 +1,12 @@
 import bcd, {
-  CompatStatement,
-  Identifier,
-  SupportBlock,
-  SupportStatement,
+  type CompatStatement,
+  type Identifier,
+  type SupportBlock,
+  type SupportStatement,
 } from "@mdn/browser-compat-data";
 // @ts-ignore
 import { getStatus } from "compute-baseline";
-import { IAttributeData, ITagData } from "vscode-html-languageservice";
+import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 import { attributeSets } from "./attributeSets";
 
 const namespace = "svg";
