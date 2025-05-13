@@ -70,18 +70,21 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-      {
-        name: "MDN Reference",
-        url,
-      },
-    ]
+        {
+          name: "MDN Reference",
+          url,
+        },
+      ]
     : undefined;
 
-export const addCompatDataAttrs = (attributes: IAttributeData[], featureId?: string, t?: ITagData) => {
+export const addCompatDataAttrs = (
+  attributes: IAttributeData[],
+  featureId?: string,
+  t?: ITagData,
+) => {
   // Add the Baseline status to each attribute
   attributes.forEach((a) => {
-    let attributeNamespace,
-      bcdMatchingAttr;
+    let attributeNamespace, bcdMatchingAttr;
     if (t) {
       attributeNamespace = `elements.${t.name}`;
       bcdMatchingAttr = bcdElements[t.name][a.name];
@@ -113,7 +116,7 @@ export const addCompatDataAttrs = (attributes: IAttributeData[], featureId?: str
     const { support, ...status } = attrStatus;
     a.status = status;
   });
-}
+};
 
 export const addCompatData = (t: ITagData) => {
   if (t.description) {
@@ -142,40 +145,52 @@ export const addCompatData = (t: ITagData) => {
   delete status.support;
   t.status = status;
 
-  addCompatDataAttrs(t.attributes, featureId, t)
+  addCompatDataAttrs(t.attributes, featureId, t);
   lookForMissingAttributes(t);
   // TODO: For some reason some attributes are not there
   lookForDeprecatedAttributes(t);
 };
 
 export const lookForMissingTags = (tags: ITagData[]) => {
-  const missingElements =
-    Object.entries(bcdElements).filter(([x, element]) => !(element as Identifier).__compat?.status?.deprecated &&
-      !(element as Identifier).__compat?.status?.experimental && (element as Identifier).__compat?.status?.standard_track && !tags.find((y) => y.name === x)).map(([x]) => x)
+  const missingElements = Object.entries(bcdElements)
+    .filter(
+      ([x, element]) =>
+        !(element as Identifier).__compat?.status?.deprecated &&
+        !(element as Identifier).__compat?.status?.experimental &&
+        (element as Identifier).__compat?.status?.standard_track &&
+        !tags.find((y) => y.name === x),
+    )
+    .map(([x]) => x);
   if (missingElements.length > 0)
-    console.log(`Missing elements ${JSON.stringify(missingElements)}`)
+    console.log(`Missing elements ${JSON.stringify(missingElements)}`);
 };
 
 export const lookForDeprecatedTags = (tags: ITagData[]) => {
-  const deprecatedElements = tags.filter(x => {
-    const elementFound = bcdElements[x.name]
-    return !elementFound || elementFound.__compat?.status?.deprecated
-  }).map(x => x.name)
-  
+  const deprecatedElements = tags
+    .filter((x) => {
+      const elementFound = bcdElements[x.name];
+      return !elementFound || elementFound.__compat?.status?.deprecated;
+    })
+    .map((x) => x.name);
+
   if (deprecatedElements.length > 0)
-    console.log(`Remove the following elements ${JSON.stringify(deprecatedElements)}`)
+    console.log(
+      `Remove the following elements ${JSON.stringify(deprecatedElements)}`,
+    );
 };
 
 export const lookForMissingAttributes = (t: ITagData) => {
-  const missingAttrs = Object.entries(bcdElements[t.name]).filter(
-    ([x, attribute]) => {
-      return x !== "__compat" &&
+  const missingAttrs = Object.entries(bcdElements[t.name])
+    .filter(([x, attribute]) => {
+      return (
+        x !== "__compat" &&
         !(attribute as Identifier).__compat?.status?.deprecated &&
         !(attribute as Identifier).__compat?.status?.experimental &&
         (attribute as Identifier).__compat?.status?.standard_track &&
         !t.attributes.find((y) => y.name === x)
-    }
-  ).map(([x]) => x);
+      );
+    })
+    .map(([x]) => x);
   if (missingAttrs.length > 0) {
     console.log(`${t.name} Missing attributes ${JSON.stringify(missingAttrs)}`);
   }
@@ -183,12 +198,19 @@ export const lookForMissingAttributes = (t: ITagData) => {
 
 export const lookForDeprecatedAttributes = (t: ITagData) => {
   const allAttributesFromSets = Object.values(attributeSets).flat();
-  const deprecatedAttrs = t.attributes.filter(x => {
-    const attributeFound = bcdElements[t.name][x.name];
-    return (!attributeFound || (attributeFound.__compat?.status?.deprecated === true)) &&
-    !allAttributesFromSets.find(a => a.name === x.name)
-  }).map(x => x.name)
-  
+  const deprecatedAttrs = t.attributes
+    .filter((x) => {
+      const attributeFound = bcdElements[t.name][x.name];
+      return (
+        (!attributeFound ||
+          attributeFound.__compat?.status?.deprecated === true) &&
+        !allAttributesFromSets.find((a) => a.name === x.name)
+      );
+    })
+    .map((x) => x.name);
+
   if (deprecatedAttrs.length > 0)
-    console.log(`${t.name} Remove the following attributes ${JSON.stringify(deprecatedAttrs)}`)
+    console.log(
+      `${t.name} Remove the following attributes ${JSON.stringify(deprecatedAttrs)}`,
+    );
 };
