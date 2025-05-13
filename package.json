@@ -42,7 +42,7 @@
     "@vscode/web-custom-data": "0.5.2",
     "change-package-name": "1.0.5",
     "compute-baseline": "^0.3.1",
-    "ts-node": "10.9.2",
+    "@types/bun": "1.2.13",
     "typescript": "5.6.3",
     "vscode-html-languageservice": "5.4.0"
   },
