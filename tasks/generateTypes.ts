@@ -4,7 +4,12 @@ import { attributes } from "./attributes";
 import { attributeSets, GenericAttributes } from "./attributeSets";
 import { element, attribute, type } from "./utils";
 import { valueSets } from "./valueSets";
-import { addCompatData, addCompatDataAttrs, lookForDeprecatedTags, lookForMissingTags } from "./compatData";
+import {
+  addCompatData,
+  addCompatDataAttrs,
+  lookForDeprecatedTags,
+  lookForMissingTags,
+} from "./compatData";
 
 const jsonData: HTMLDataV1 = {
   version: 1.1,
@@ -118,7 +123,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "defs",
       "Is used to store graphical objects that will be used at a later time.",
-      [attributes.systemLanguage,...attributeSets.PresentationAttributes],
+      [attributes.systemLanguage, ...attributeSets.PresentationAttributes],
     ),
     element(
       "desc",
@@ -161,7 +166,10 @@ const jsonData: HTMLDataV1 = {
       [
         type(["matrix", "saturate", "hueRotate", "luminanceToAlpha"]),
         attributes.in,
-        attribute("values", "The value for the matrix type set in the type attribute."),
+        attribute(
+          "values",
+          "The value for the matrix type set in the type attribute.",
+        ),
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
       ],
@@ -499,7 +507,8 @@ const jsonData: HTMLDataV1 = {
     element(
       "foreignObject",
       "The <foreignObject> SVG element allows for inclusion of a foreign XML namespace which has its graphical content drawn by a different user agent. The included foreign graphical content is subject to SVG transformations and compositing.",
-      [attributes.systemLanguage,
+      [
+        attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
@@ -528,7 +537,11 @@ const jsonData: HTMLDataV1 = {
         attributes.height,
         attributes.preserveAspectRatio,
         attributes.crossorigin,
-        attribute("decoding", "Provides a hint to the browser as to whether it should perform image decoding synchronously or asynchronously.", ["async", "sync", "auto"]),
+        attribute(
+          "decoding",
+          "Provides a hint to the browser as to whether it should perform image decoding synchronously or asynchronously.",
+          ["async", "sync", "auto"],
+        ),
         ...attributeSets.AnimationTargetElementAttributes,
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
@@ -635,7 +648,8 @@ const jsonData: HTMLDataV1 = {
     element(
       "pattern",
       `The <pattern> element defines a graphics object which can be redrawn at repeated x and y-coordinate intervals ("tiled") to cover an area. The <pattern> is referenced by the fill and/or stroke attributes on other graphics elements to fill or stroke those elements with the referenced pattern.`,
-      [attributes.systemLanguage,
+      [
+        attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
@@ -748,7 +762,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "stop",
       "The <stop> SVG element defines the ramp of colors to use on a gradient, which is a child element to either the <linearGradient> or the <radialGradient> element.",
-      [attributes.offset,...attributeSets.PresentationAttributes],
+      [attributes.offset, ...attributeSets.PresentationAttributes],
     ),
     element(
       "style",
@@ -765,7 +779,8 @@ const jsonData: HTMLDataV1 = {
     element(
       "svg",
       "The svg element can be used to embed an SVG fragment inside the current document (for example, an HTML document). This SVG fragment has its own viewport and coordinate system.",
-      [attributes.systemLanguage,
+      [
+        attributes.systemLanguage,
         attribute("xmlns", "Specifies the XML Namespace of the document.", [
           "http://www.w3.org/2000/svg",
         ]),
@@ -782,7 +797,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "switch",
       "The <switch> SVG element evaluates the requiredFeatures, requiredExtensions and systemLanguage attributes on its direct child elements in order, and then processes and renders the first child for which these attributes evaluate to true. All others will be bypassed and therefore not rendered. If the child element is a container element such as a <g>, then the entire subtree is either processed/rendered or bypassed/not rendered.",
-      [attributes.systemLanguage,...attributeSets.PresentationAttributes],
+      [attributes.systemLanguage, ...attributeSets.PresentationAttributes],
     ),
     element(
       "symbol",
@@ -881,7 +896,7 @@ const jsonData: HTMLDataV1 = {
   valueSets,
   globalAttributes: GenericAttributes,
 };
-addCompatDataAttrs(jsonData.globalAttributes!)
+addCompatDataAttrs(jsonData.globalAttributes!);
 
 const orderedData: HTMLDataV1 = {
   ...jsonData,
