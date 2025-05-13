@@ -4,7 +4,7 @@ import { attributes } from "./attributes";
 import { attributeSets, GenericAttributes } from "./attributeSets";
 import { element, attribute, type } from "./utils";
 import { valueSets } from "./valueSets";
-import { addCompatData, lookForMissingTags } from "./compatData";
+import { addCompatData, addCompatDataAttrs, lookForDeprecatedTags, lookForMissingTags } from "./compatData";
 
 const jsonData: HTMLDataV1 = {
   version: 1.1,
@@ -13,11 +13,12 @@ const jsonData: HTMLDataV1 = {
       "a",
       "The `<a>` SVG element creates a hyperlink to other web pages, files, locations in the same page, email addresses, or any other URL.",
       [
-        attribute("href", "The URL or URL fragment the hyperlink points to."),
+        attributes.href,
         attribute(
           "download",
           "Instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file.",
         ),
+        attributes.systemLanguage,
         attribute(
           "hreflang",
           "The human language of the URL or URL fragment that the hyperlink points to.",
@@ -44,6 +45,7 @@ const jsonData: HTMLDataV1 = {
       "animate",
       "Provides a way to animate an attribute of an element over time.",
       [
+        attributes.systemLanguage,
         ...attributeSets.AnimationTargetElementAttributes,
         ...attributeSets.AnimationAttributeTargetAttributes,
         ...attributeSets.AnimationTimingAttributes,
@@ -55,6 +57,7 @@ const jsonData: HTMLDataV1 = {
       "animateMotion",
       "Provides a way to define how an element moves along a motion path.",
       [
+        attributes.systemLanguage,
         attribute(
           "keyPoints",
           "This attribute indicate, in the range [0,1], how far is the object along the path for each keyTimes associated values.",
@@ -62,6 +65,10 @@ const jsonData: HTMLDataV1 = {
         attribute(
           "path",
           "This attribute defines the path of the motion, using the same syntax as the d attribute.",
+        ),
+        attribute(
+          "origin",
+          "Specifies the origin of motion for an animation. It has no effect in SVG.",
         ),
         attributes.rotate,
         ...attributeSets.AnimationTargetElementAttributes,
@@ -75,7 +82,8 @@ const jsonData: HTMLDataV1 = {
       "animateTransform",
       "animates a transformation attribute on its target element, thereby allowing animations to control translation, scaling, rotation, and/or skewing.",
       [
-        attributes.from,
+        type(),
+        attributes.systemLanguage,
         attributes.to,
         attributes.by,
         ...attributeSets.AnimationTargetElementAttributes,
@@ -86,6 +94,7 @@ const jsonData: HTMLDataV1 = {
       ],
     ),
     element("circle", "Create circles based on a center point and a radius.", [
+      attributes.systemLanguage,
       attributes.cx,
       attributes.cy,
       attributes.pathLength,
@@ -97,6 +106,7 @@ const jsonData: HTMLDataV1 = {
       "clipPath",
       "Defines a clipping path. A clipping path is used/referenced using the clip-path property.",
       [
+        attributes.systemLanguage,
         attribute(
           "clipPathUnits",
           "Defines the coordinate system for the contents of the <clippath> element.",
@@ -108,7 +118,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "defs",
       "Is used to store graphical objects that will be used at a later time.",
-      attributeSets.PresentationAttributes,
+      [attributes.systemLanguage,...attributeSets.PresentationAttributes],
     ),
     element(
       "desc",
@@ -124,6 +134,7 @@ const jsonData: HTMLDataV1 = {
       "ellipse",
       "The ellipse element is an SVG basic shape, used to create ellipses based on a center coordinate, and both their x and y radius.",
       [
+        attributes.systemLanguage,
         attributes.cx,
         attributes.cy,
         attributes.rx,
@@ -148,6 +159,9 @@ const jsonData: HTMLDataV1 = {
       "feColorMatrix",
       "The <feColorMatrix> SVG filter element changes colors based on a transformation matrix. ",
       [
+        type(["matrix", "saturate", "hueRotate", "luminanceToAlpha"]),
+        attributes.in,
+        attribute("values", "The value for the matrix type set in the type attribute."),
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
       ],
@@ -336,6 +350,8 @@ const jsonData: HTMLDataV1 = {
       "feImage",
       "The <feImage> SVG filter primitive fetches image data from an external source and provides the pixel data as output (meaning if the external source is an SVG image, it is rasterized.)",
       [
+        attributes.crossorigin,
+        attributes.href,
         attributes.preserveAspectRatio,
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
@@ -404,6 +420,7 @@ const jsonData: HTMLDataV1 = {
         attributes.x,
         attributes.y,
         attributes.z,
+        attributes.specularExponent,
         attributes.result,
         attribute(
           "pointsAtX",
@@ -482,7 +499,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "foreignObject",
       "The <foreignObject> SVG element allows for inclusion of a foreign XML namespace which has its graphical content drawn by a different user agent. The included foreign graphical content is subject to SVG transformations and compositing.",
-      [
+      [attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
@@ -495,6 +512,7 @@ const jsonData: HTMLDataV1 = {
       "g",
       "The <g> SVG element is a container used to group other SVG elements.",
       [
+        attributes.systemLanguage,
         ...attributeSets.PresentationAttributes,
         ...attributeSets.AriaAttributes,
       ],
@@ -503,12 +521,14 @@ const jsonData: HTMLDataV1 = {
       "image",
       "The <image> SVG element allows a raster image to be included in an SVG document.",
       [
+        attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
         attributes.height,
         attributes.preserveAspectRatio,
         attributes.crossorigin,
+        attribute("decoding", "Provides a hint to the browser as to whether it should perform image decoding synchronously or asynchronously.", ["async", "sync", "auto"]),
         ...attributeSets.AnimationTargetElementAttributes,
         ...attributeSets.PresentationAttributes,
         ...attributeSets.FilterPrimitiveAttributes,
@@ -518,6 +538,7 @@ const jsonData: HTMLDataV1 = {
       "line",
       "The <line> element is an SVG basic shape used to create a line connecting two points.",
       [
+        attributes.systemLanguage,
         attributes.x1,
         attributes.x2,
         attributes.y1,
@@ -572,6 +593,7 @@ const jsonData: HTMLDataV1 = {
       "mask",
       "The <mask> element defines an alpha mask for compositing the current object into the background. A mask is used/referenced using the mask property.",
       [
+        attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
@@ -597,12 +619,13 @@ const jsonData: HTMLDataV1 = {
     element(
       "mpath",
       "The <mpath> sub-element for the <animateMotion> element provides the ability to reference an external <path> element as the definition of a motion path.",
-      [],
+      [attributes.href],
     ),
     element(
       "path",
       "The <path> SVG element is the generic element to define a shape. All the basic shapes can be created with a path element.",
       [
+        attributes.systemLanguage,
         attributes.pathLength,
         attribute("d", "This attribute defines a path to follow."),
         ...attributeSets.PresentationAttributes,
@@ -612,7 +635,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "pattern",
       `The <pattern> element defines a graphics object which can be redrawn at repeated x and y-coordinate intervals ("tiled") to cover an area. The <pattern> is referenced by the fill and/or stroke attributes on other graphics elements to fill or stroke those elements with the referenced pattern.`,
-      [
+      [attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
@@ -641,6 +664,7 @@ const jsonData: HTMLDataV1 = {
       "polygon",
       "The <polygon> element defines a closed shape consisting of a set of connected straight line segments. The last point is connected to the first point. For open shapes see the <polyline> element.",
       [
+        attributes.systemLanguage,
         attributes.pathLength,
         attributes.points,
         ...attributeSets.PresentationAttributes,
@@ -651,6 +675,7 @@ const jsonData: HTMLDataV1 = {
       "polyline",
       `The <polyline> SVG element is an SVG basic shape that creates straight lines connecting several points. Typically a polyline is used to create open shapes as the last point doesn't have to be connected to the first point. For closed shapes see the <polygon> element.`,
       [
+        attributes.systemLanguage,
         attributes.pathLength,
         attributes.points,
         ...attributeSets.PresentationAttributes,
@@ -688,6 +713,7 @@ const jsonData: HTMLDataV1 = {
       "rect",
       "The rect element is an SVG basic shape, used to create rectangles based on the position of a corner and their width and height. It may also be used to create rectangles with rounded corners.",
       [
+        attributes.systemLanguage,
         attributes.x,
         attributes.y,
         attributes.width,
@@ -712,6 +738,8 @@ const jsonData: HTMLDataV1 = {
       "set",
       "The <set> element provides a simple means of just setting the value of an attribute for a specified duration. It supports all attribute types, including those that cannot reasonably be interpolated, such as string and boolean values. The <set> element is non-additive. The additive and accumulate attributes are not allowed, and will be ignored if specified.",
       [
+        attributes.systemLanguage,
+        attributes.href,
         attributes.to,
         ...attributeSets.AnimationAttributeTargetAttributes,
         ...attributeSets.AnimationTimingAttributes,
@@ -720,12 +748,13 @@ const jsonData: HTMLDataV1 = {
     element(
       "stop",
       "The <stop> SVG element defines the ramp of colors to use on a gradient, which is a child element to either the <linearGradient> or the <radialGradient> element.",
-      attributeSets.PresentationAttributes,
+      [attributes.offset,...attributeSets.PresentationAttributes],
     ),
     element(
       "style",
       `The <style> SVG element allows style sheets to be embedded directly within SVG content. SVG's style element has the same attributes as the corresponding element in HTML (see HTML's <style> element).`,
       [
+        attributes.title,
         type([]),
         attribute(
           "media",
@@ -736,7 +765,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "svg",
       "The svg element can be used to embed an SVG fragment inside the current document (for example, an HTML document). This SVG fragment has its own viewport and coordinate system.",
-      [
+      [attributes.systemLanguage,
         attribute("xmlns", "Specifies the XML Namespace of the document.", [
           "http://www.w3.org/2000/svg",
         ]),
@@ -753,7 +782,7 @@ const jsonData: HTMLDataV1 = {
     element(
       "switch",
       "The <switch> SVG element evaluates the requiredFeatures, requiredExtensions and systemLanguage attributes on its direct child elements in order, and then processes and renders the first child for which these attributes evaluate to true. All others will be bypassed and therefore not rendered. If the child element is a container element such as a <g>, then the entire subtree is either processed/rendered or bypassed/not rendered.",
-      [...attributeSets.PresentationAttributes],
+      [attributes.systemLanguage,...attributeSets.PresentationAttributes],
     ),
     element(
       "symbol",
@@ -775,6 +804,7 @@ const jsonData: HTMLDataV1 = {
       "text",
       `The SVG <text> element defines a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to <text>, just like any other SVG graphics element.`,
       [
+        attributes.systemLanguage,
         attributes.dx,
         attributes.dy,
         attributes.x,
@@ -790,6 +820,8 @@ const jsonData: HTMLDataV1 = {
       "textPath",
       "In addition to text drawn in a straight line, SVG also includes the ability to place text along the shape of a <path> element. To specify that a block of text is to be rendered along the shape of a <path>, include the given text within a <textPath> element which includes an href attribute with a reference to a <path> element.",
       [
+        attributes.systemLanguage,
+        attributes.startOffset,
         attributes.method,
         attributes.lengthAdjust,
         attributes.spacing,
@@ -802,12 +834,13 @@ const jsonData: HTMLDataV1 = {
     element(
       "title",
       "Each container element or graphics element in an SVG drawing can supply a <title> element containing a description string where the description is text-only. When the current SVG document fragment is rendered as SVG on visual media, <title> element is not rendered as part of the graphics. However, some user agents may, for example, display the <title> element as a tooltip. Alternate presentations are possible, both visual and aural, which display the <title> element but do not display path elements or other graphics elements. The <title> element generally improve accessibility of SVG documents",
-      [],
+      [attribute("tooltip_display", "Tooltip display")],
     ),
     element(
       "tspan",
       "Defines a subtext within a <text> element or another <tspan> element. It allows for adjustment of the style and/or position of that subtext as needed.",
       [
+        attributes.systemLanguage,
         attributes.dx,
         attributes.dy,
         attributes.x,
@@ -827,6 +860,9 @@ const jsonData: HTMLDataV1 = {
         attributes.y,
         attributes.height,
         attributes.width,
+        attributes.systemLanguage,
+        attribute("data_uri", "Load from <code>data:</code> URI"),
+        attribute("external_uri", "Load from external URI"),
         ...attributeSets.AnimationTargetElementAttributes,
         ...attributeSets.PresentationAttributes,
         ...attributeSets.AriaAttributes,
@@ -845,6 +881,7 @@ const jsonData: HTMLDataV1 = {
   valueSets,
   globalAttributes: GenericAttributes,
 };
+addCompatDataAttrs(jsonData.globalAttributes!)
 
 const orderedData: HTMLDataV1 = {
   ...jsonData,
@@ -888,3 +925,4 @@ fs.writeFileSync(
 );
 
 lookForMissingTags(orderedData.tags!);
+lookForDeprecatedTags(orderedData.tags!);

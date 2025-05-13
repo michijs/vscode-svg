@@ -1003,7 +1003,7 @@
           "browsers": [
             "C50",
             "CA50",
-            "E12",
+            "E≤79",
             "FF51",
             "FFA51",
             "S12.1",
@@ -1011,8 +1011,8 @@
           ],
           "status": {
             "baseline": "high",
-            "baseline_low_date": "2019-03-25",
-            "baseline_high_date": "2021-09-25"
+            "baseline_low_date": "≤2020-01-15",
+            "baseline_high_date": "≤2022-07-15"
           }
         },
         {
@@ -1768,6 +1768,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -2592,6 +2616,30 @@
           ]
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "to",
           "description": "This attribute indicates the final value of the attribute that will be modified during the animation. The value of the attribute will change between the from attribute value and this value. By default the change will be linear.",
           "references": [
@@ -2992,6 +3040,30 @@
           ]
         },
         {
+          "name": "origin",
+          "description": "Specifies the origin of motion for an animation. It has no effect in SVG.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/origin"
+            }
+          ],
+          "browsers": [
+            "C19",
+            "CA25",
+            "E79",
+            "FF4",
+            "FFA4",
+            "S6",
+            "SM6"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2020-01-15",
+            "baseline_high_date": "2022-07-15"
+          }
+        },
+        {
           "name": "path",
           "description": "This attribute defines the path of the motion, using the same syntax as the d attribute.",
           "references": [
@@ -3097,6 +3169,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-01-15",
             "baseline_high_date": "≤2022-07-15"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -3436,30 +3532,6 @@
           }
         },
         {
-          "name": "from",
-          "description": "This attribute indicates the initial value of the attribute that will be modified during the animation. When used with the to attribute, the animation will change the modified attribute from the from value to the to value.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/From"
-            }
-          ],
-          "browsers": [
-            "C2",
-            "CA18",
-            "E79",
-            "FF4",
-            "FFA4",
-            "S3",
-            "SM2"
-          ],
-          "status": {
-            "baseline": "high",
-            "baseline_low_date": "2020-01-15",
-            "baseline_high_date": "2022-07-15"
-          }
-        },
-        {
           "name": "href",
           "description": "This attribute indicates the name of the attribute in the parent element that is going to be changed during an animation.",
           "references": [
@@ -3584,6 +3656,30 @@
           ]
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "to",
           "description": "This attribute indicates the final value of the attribute that will be modified during the animation. The value of the attribute will change between the from attribute value and this value. By default the change will be linear.",
           "references": [
@@ -3629,6 +3725,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-01-15",
             "baseline_high_date": "≤2022-07-15"
+          }
+        },
+        {
+          "name": "type",
+          "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type"
+            }
+          ],
+          "browsers": [
+            "C2",
+            "CA18",
+            "E79",
+            "FF4",
+            "FFA4",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2020-01-15",
+            "baseline_high_date": "2022-07-15"
           }
         },
         {
@@ -5944,6 +6064,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -7833,6 +7977,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -9687,6 +9855,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -12384,6 +12576,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -15845,6 +16061,50 @@
           }
         },
         {
+          "name": "in",
+          "description": "The in attribute identifies input for the given filter primitive.",
+          "values": [
+            {
+              "name": "SourceGraphic"
+            },
+            {
+              "name": "SourceAlpha"
+            },
+            {
+              "name": "BackgroundImage"
+            },
+            {
+              "name": "BackgroundAlpha"
+            },
+            {
+              "name": "FillPaint"
+            },
+            {
+              "name": "StrokePaint"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/in"
+            }
+          ],
+          "browsers": [
+            "C5",
+            "CA18",
+            "E12",
+            "FF3",
+            "FFA4",
+            "S6",
+            "SM6"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "kerning",
           "description": "The kerning attribute indicates whether the browser should adjust inter-glyph spacing based on kerning tables that are included in the relevant font (i.e., enable auto-kerning) or instead disable auto-kerning and instead set inter-character spacing to a specific length (typically, zero).",
           "references": [
@@ -16635,6 +16895,68 @@
             "baseline": "high",
             "baseline_low_date": "2015-09-30",
             "baseline_high_date": "2018-03-30"
+          }
+        },
+        {
+          "name": "type",
+          "description": "Is a generic attribute and it has different meaning based on the context in which it's used.",
+          "values": [
+            {
+              "name": "matrix"
+            },
+            {
+              "name": "saturate"
+            },
+            {
+              "name": "hueRotate"
+            },
+            {
+              "name": "luminanceToAlpha"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type"
+            }
+          ],
+          "browsers": [
+            "C5",
+            "CA18",
+            "E12",
+            "FF3",
+            "FFA4",
+            "S6",
+            "SM6"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
+          "name": "values",
+          "description": "The value for the matrix type set in the type attribute.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/values"
+            }
+          ],
+          "browsers": [
+            "C5",
+            "CA18",
+            "E12",
+            "FF3",
+            "FFA4",
+            "S6",
+            "SM6"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -34886,6 +35208,30 @@
           ]
         },
         {
+          "name": "crossorigin",
+          "description": "provides support for CORS, defining how the element handles crossorigin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. It is a CORS settings attribute.",
+          "valueSet": "xo",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/crossorigin"
+            }
+          ],
+          "browsers": [
+            "C118",
+            "CA118",
+            "E118",
+            "FF114",
+            "FFA114",
+            "S17.2",
+            "SM17.2"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-12-11"
+          }
+        },
+        {
           "name": "cursor",
           "description": "The cursor attribute specifies the mouse cursor displayed when the mouse pointer is over an element.",
           "values": [
@@ -35551,6 +35897,30 @@
             "baseline": "high",
             "baseline_low_date": "2020-01-15",
             "baseline_high_date": "2022-07-15"
+          }
+        },
+        {
+          "name": "href",
+          "description": "The URL or URL fragment the hyperlink points to.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/href"
+            }
+          ],
+          "browsers": [
+            "C50",
+            "CA50",
+            "E≤79",
+            "FF51",
+            "FFA51",
+            "S12.1",
+            "SM12.2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "≤2020-01-15",
+            "baseline_high_date": "≤2022-07-15"
           }
         },
         {
@@ -45573,6 +45943,30 @@
           ]
         },
         {
+          "name": "specularExponent",
+          "description": "The specularExponent attribute controls the focus for the light source, a larger value indicate a more \"shiny\" light.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularExponent"
+            }
+          ],
+          "browsers": [
+            "C5",
+            "CA18",
+            "E12",
+            "FF3",
+            "FFA4",
+            "S6",
+            "SM6"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "x",
           "description": "This attribute indicates an x-axis coordinate in the user coordinate system. The exact effect of this coordinate depend on each element. Most of the time, it represent the x-axis coordinate of the upper-left corner of the rectangular region of the reference element (see each individual element's documentation for exceptions).Its syntax is the same as that for <length>",
           "references": [
@@ -52476,6 +52870,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -55062,6 +55480,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -55758,6 +56200,37 @@
             "baseline": "high",
             "baseline_low_date": "2021-12-07",
             "baseline_high_date": "2024-06-07"
+          }
+        },
+        {
+          "name": "decoding",
+          "description": "Provides a hint to the browser as to whether it should perform image decoding synchronously or asynchronously.",
+          "values": [
+            {
+              "name": "async"
+            },
+            {
+              "name": "sync"
+            },
+            {
+              "name": "auto"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/decoding"
+            }
+          ],
+          "browsers": [
+            "C65",
+            "CA65",
+            "E79",
+            "FF63",
+            "FFA63"
+          ],
+          "status": {
+            "baseline": false
           }
         },
         {
@@ -57167,6 +57640,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -59835,6 +60332,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -66720,6 +67241,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -67141,7 +67686,32 @@
         "kind": "markdown",
         "value": "The <mpath> sub-element for the <animateMotion> element provides the ability to reference an external <path> element as the definition of a motion path."
       },
-      "attributes": [],
+      "attributes": [
+        {
+          "name": "href",
+          "description": "The URL or URL fragment the hyperlink points to.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/href"
+            }
+          ],
+          "browsers": [
+            "C50",
+            "CA50",
+            "E≤79",
+            "FF51",
+            "FFA51",
+            "S12.1",
+            "SM12.2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "≤2020-01-15",
+            "baseline_high_date": "≤2022-07-15"
+          }
+        }
+      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -69396,6 +69966,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -71469,6 +72063,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -74116,6 +74734,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -76661,6 +77303,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -81386,6 +82052,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -82010,6 +82700,30 @@
           }
         },
         {
+          "name": "href",
+          "description": "The URL or URL fragment the hyperlink points to.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/href"
+            }
+          ],
+          "browsers": [
+            "C50",
+            "CA50",
+            "E≤79",
+            "FF51",
+            "FFA51",
+            "S12.1",
+            "SM12.2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "≤2020-01-15",
+            "baseline_high_date": "≤2022-07-15"
+          }
+        },
+        {
           "name": "max",
           "description": "This attribute specifies the maximum value of the active duration. ",
           "references": [
@@ -82088,6 +82802,30 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/restart"
             }
           ]
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
         },
         {
           "name": "to",
@@ -83253,6 +83991,30 @@
           }
         },
         {
+          "name": "offset",
+          "description": "This attribute defines where the gradient stop is placed along the gradient vector.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/offset"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF1.5",
+            "FFA4",
+            "S3",
+            "SM3"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "opacity",
           "description": "The opacity attribute specifies the transparency of an object or of a group of objects, that is, the degree to which the background behind the element is overlaid.",
           "references": [
@@ -84006,6 +84768,30 @@
             {
               "name": "MDN Reference",
               "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/media"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E79",
+            "FF1.5",
+            "FFA4",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2020-01-15",
+            "baseline_high_date": "2022-07-15"
+          }
+        },
+        {
+          "name": "title",
+          "description": "This attribute is the title of the style sheet which can be used to switch between alternate style sheets.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/title"
             }
           ],
           "browsers": [
@@ -86376,6 +87162,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -88341,6 +89151,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -93727,6 +94561,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -96151,6 +97009,30 @@
           }
         },
         {
+          "name": "startOffset",
+          "description": "How far the beginning of the text should be offset from the beginning of the path.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/startOffset"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF20",
+            "FFA20",
+            "S3.1",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "stop-color",
           "description": "The stop-color attribute indicates what color to use at that gradient stop. The keyword currentColor and ICC colors can be specified in the same manner as within a <paint> specification for the fill and stroke attributes.",
           "references": [
@@ -96416,6 +97298,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -96764,7 +97670,32 @@
         "kind": "markdown",
         "value": "Each container element or graphics element in an SVG drawing can supply a <title> element containing a description string where the description is text-only. When the current SVG document fragment is rendered as SVG on visual media, <title> element is not rendered as part of the graphics. However, some user agents may, for example, display the <title> element as a tooltip. Alternate presentations are possible, both visual and aural, which display the <title> element but do not display path elements or other graphics elements. The <title> element generally improve accessibility of SVG documents"
       },
-      "attributes": [],
+      "attributes": [
+        {
+          "name": "tooltip_display",
+          "description": "Tooltip display",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tooltip_display"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E79",
+            "FF4",
+            "FFA4",
+            "S3",
+            "SM3"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2020-01-15",
+            "baseline_high_date": "2022-07-15"
+          }
+        }
+      ],
       "references": [
         {
           "name": "MDN Reference",
@@ -99089,6 +100020,30 @@
           }
         },
         {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
+          }
+        },
+        {
           "name": "text-anchor",
           "description": "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.",
           "values": [
@@ -100483,6 +101438,22 @@
           }
         },
         {
+          "name": "data_uri",
+          "description": "Load from <code>data:</code> URI",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/data_uri"
+            }
+          ],
+          "browsers": [
+            "E≤18"
+          ],
+          "status": {
+            "baseline": false
+          }
+        },
+        {
           "name": "direction",
           "description": "The direction attribute specifies the base writing direction of text and the direction of embeddings and overrides (see unicode-bidi) for the Unicode bidirectional algorithm. For the direction attribute to have any effect on an element that does not by itself establish a new text chunk (such as a <tspan> element without absolute position adjustments due to x or y attributes), the unicode-bidi property's value must be embed or bidi-override.",
           "values": [
@@ -100648,6 +101619,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-07-28",
             "baseline_high_date": "≤2023-01-28"
+          }
+        },
+        {
+          "name": "external_uri",
+          "description": "Load from external URI",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/external_uri"
+            }
+          ],
+          "browsers": [
+            "C22",
+            "CA25",
+            "E13",
+            "FF4",
+            "FFA4",
+            "S7",
+            "SM7"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-11-12",
+            "baseline_high_date": "2018-05-12"
           }
         },
         {
@@ -101720,6 +102715,30 @@
             "baseline": "high",
             "baseline_low_date": "≤2020-03-24",
             "baseline_high_date": "≤2022-09-24"
+          }
+        },
+        {
+          "name": "systemLanguage",
+          "description": "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/systemLanguage"
+            }
+          ],
+          "browsers": [
+            "C1",
+            "CA18",
+            "E12",
+            "FF12",
+            "FFA14",
+            "S3",
+            "SM2"
+          ],
+          "status": {
+            "baseline": "high",
+            "baseline_low_date": "2015-07-29",
+            "baseline_high_date": "2018-01-29"
           }
         },
         {
@@ -102949,491 +103968,1005 @@
   "globalAttributes": [
     {
       "name": "class",
-      "description": "Assigns a class name or set of class names to an element. It functions identically to the class attribute in HTML."
+      "description": "Assigns a class name or set of class names to an element. It functions identically to the class attribute in HTML.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/class"
+        }
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "id",
-      "description": "Defines a unique identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS)."
+      "description": "Defines a unique identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/id"
+        }
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "lang",
-      "description": "Participates in defining the language of the element, the language that non-editable elements are written in or the language that editable elements should be written in."
+      "description": "Participates in defining the language of the element, the language that non-editable elements are written in or the language that editable elements should be written in.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/lang"
+        }
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S≤4",
+        "SM≤3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "onabort",
       "description": {
         "kind": "markdown",
         "value": "The loading of a resource has been aborted."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onabort"
+        }
+      ]
     },
     {
       "name": "onblur",
       "description": {
         "kind": "markdown",
         "value": "An element has lost focus (does not bubble)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onblur"
+        }
+      ]
     },
     {
       "name": "oncanplay",
       "description": {
         "kind": "markdown",
         "value": "The user agent can play the media, but estimates that not enough data has been loaded to play the media up to its end without having to stop for further buffering of content."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncanplay"
+        }
+      ]
     },
     {
       "name": "oncanplaythrough",
       "description": {
         "kind": "markdown",
         "value": "The user agent can play the media up to its end without having to stop for further buffering of content."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncanplaythrough"
+        }
+      ]
     },
     {
       "name": "onchange",
       "description": {
         "kind": "markdown",
         "value": "The change event is fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onchange"
+        }
+      ]
     },
     {
       "name": "onclick",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button has been pressed and released on an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onclick"
+        }
+      ]
     },
     {
       "name": "oncontextmenu",
       "description": {
         "kind": "markdown",
         "value": "The right button of the mouse is clicked (before the context menu is displayed)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncontextmenu"
+        }
+      ]
     },
     {
       "name": "ondblclick",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button is clicked twice on an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondblclick"
+        }
+      ]
     },
     {
       "name": "ondrag",
       "description": {
         "kind": "markdown",
         "value": "An element or text selection is being dragged (every 350ms)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondrag"
+        }
+      ]
     },
     {
       "name": "ondragend",
       "description": {
         "kind": "markdown",
         "value": "A drag operation is being ended (by releasing a mouse button or hitting the escape key)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragend"
+        }
+      ]
     },
     {
       "name": "ondragenter",
       "description": {
         "kind": "markdown",
         "value": "A dragged element or text selection enters a valid drop target."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragenter"
+        }
+      ]
     },
     {
       "name": "ondragleave",
       "description": {
         "kind": "markdown",
         "value": "A dragged element or text selection leaves a valid drop target."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragleave"
+        }
+      ]
     },
     {
       "name": "ondragover",
       "description": {
         "kind": "markdown",
         "value": "An element or text selection is being dragged over a valid drop target (every 350ms)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragover"
+        }
+      ]
     },
     {
       "name": "ondragstart",
       "description": {
         "kind": "markdown",
         "value": "The user starts dragging an element or text selection."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragstart"
+        }
+      ]
     },
     {
       "name": "ondrop",
       "description": {
         "kind": "markdown",
         "value": "An element is dropped on a valid drop target."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondrop"
+        }
+      ]
     },
     {
       "name": "ondurationchange",
       "description": {
         "kind": "markdown",
         "value": "The duration attribute has been updated."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondurationchange"
+        }
+      ]
     },
     {
       "name": "onemptied",
       "description": {
         "kind": "markdown",
         "value": "The media has become empty; for example, this event is sent if the media has already been loaded (or partially loaded), and the load() method is called to reload it."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onemptied"
+        }
+      ]
     },
     {
       "name": "onended",
       "description": {
         "kind": "markdown",
         "value": "Playback has stopped because the end of the media was reached."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onended"
+        }
+      ]
     },
     {
       "name": "onerror",
       "description": {
         "kind": "markdown",
         "value": "A resource failed to load."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onerror"
+        }
+      ]
     },
     {
       "name": "onfocus",
       "description": {
         "kind": "markdown",
         "value": "An element has received focus (does not bubble)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onfocus"
+        }
+      ]
     },
     {
-      "name": "onformchange"
+      "name": "onformchange",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onformchange"
+        }
+      ]
     },
     {
-      "name": "onforminput"
+      "name": "onforminput",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onforminput"
+        }
+      ]
     },
     {
       "name": "oninput",
       "description": {
         "kind": "markdown",
         "value": "The value of an element changes or the content of an element with the attribute contenteditable is modified."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oninput"
+        }
+      ]
     },
     {
       "name": "oninvalid",
       "description": {
         "kind": "markdown",
         "value": "A submittable element has been checked and doesn't satisfy its constraints."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oninvalid"
+        }
+      ]
     },
     {
       "name": "onkeydown",
       "description": {
         "kind": "markdown",
         "value": "A key is pressed down."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onkeydown"
+        }
+      ]
     },
     {
       "name": "onkeypress",
       "description": {
         "kind": "markdown",
         "value": "A key is pressed down and that key normally produces a character value (use input instead)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onkeypress"
+        }
+      ]
     },
     {
       "name": "onkeyup",
       "description": {
         "kind": "markdown",
         "value": "A key is released."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onkeyup"
+        }
+      ]
     },
     {
       "name": "onload",
       "description": {
         "kind": "markdown",
         "value": "A resource and its dependent resources have finished loading."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onload"
+        }
+      ]
     },
     {
       "name": "onloadeddata",
       "description": {
         "kind": "markdown",
         "value": "The first frame of the media has finished loading."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onloadeddata"
+        }
+      ]
     },
     {
       "name": "onloadedmetadata",
       "description": {
         "kind": "markdown",
         "value": "The metadata has been loaded."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onloadedmetadata"
+        }
+      ]
     },
     {
       "name": "onloadstart",
       "description": {
         "kind": "markdown",
         "value": "Progress has begun."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onloadstart"
+        }
+      ]
     },
     {
       "name": "onmousedown",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button (usually a mouse) is pressed on an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmousedown"
+        }
+      ]
     },
     {
       "name": "onmouseenter",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved onto the element that has the listener attached."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseenter"
+        }
+      ]
     },
     {
       "name": "onmouseleave",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved off the element that has the listener attached."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseleave"
+        }
+      ]
     },
     {
       "name": "onmousemove",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved over an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmousemove"
+        }
+      ]
     },
     {
       "name": "onmouseout",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved off the element that has the listener attached or off one of its children."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseout"
+        }
+      ]
     },
     {
       "name": "onmouseover",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved onto the element that has the listener attached or onto one of its children."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseover"
+        }
+      ]
     },
     {
       "name": "onmouseup",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button is released over an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseup"
+        }
+      ]
     },
     {
-      "name": "onmousewheel"
+      "name": "onmousewheel",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmousewheel"
+        }
+      ]
     },
     {
       "name": "onpause",
       "description": {
         "kind": "markdown",
         "value": "Playback has been paused."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpause"
+        }
+      ]
     },
     {
       "name": "onplay",
       "description": {
         "kind": "markdown",
         "value": "Playback has begun."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onplay"
+        }
+      ]
     },
     {
       "name": "onplaying",
       "description": {
         "kind": "markdown",
         "value": "Playback is ready to start after having been paused or delayed due to lack of data."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onplaying"
+        }
+      ]
     },
     {
       "name": "onpointercancel",
       "description": {
         "kind": "markdown",
         "value": "The pointer is unlikely to produce any more events."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointercancel"
+        }
+      ]
     },
     {
       "name": "onpointerdown",
       "description": {
         "kind": "markdown",
         "value": "The pointer enters the active buttons state."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerdown"
+        }
+      ]
     },
     {
       "name": "onpointerenter",
       "description": {
         "kind": "markdown",
         "value": "Pointing device is moved inside the hit-testing boundary."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerenter"
+        }
+      ]
     },
     {
       "name": "onpointerleave",
       "description": {
         "kind": "markdown",
         "value": "Pointing device is moved out of the hit-testing boundary."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerleave"
+        }
+      ]
     },
     {
       "name": "onpointerlockchange",
       "description": {
         "kind": "markdown",
         "value": "The pointer was locked or released."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerlockchange"
+        }
+      ]
     },
     {
       "name": "onpointerlockerror",
       "description": {
         "kind": "markdown",
         "value": "It was impossible to lock the pointer for technical reasons or because the permission was denied."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerlockerror"
+        }
+      ]
     },
     {
       "name": "onpointermove",
       "description": {
         "kind": "markdown",
         "value": "The pointer changed coordinates."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointermove"
+        }
+      ]
     },
     {
       "name": "onpointerout",
       "description": {
         "kind": "markdown",
         "value": "The pointing device moved out of hit-testing boundary or leaves detectable hover range."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerout"
+        }
+      ]
     },
     {
       "name": "onpointerover",
       "description": {
         "kind": "markdown",
         "value": "The pointing device is moved into the hit-testing boundary."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerover"
+        }
+      ]
     },
     {
       "name": "onpointerup",
       "description": {
         "kind": "markdown",
         "value": "The pointer leaves the active buttons state."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpointerup"
+        }
+      ]
     },
     {
       "name": "onprogress",
       "description": {
         "kind": "markdown",
         "value": "In progress."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onprogress"
+        }
+      ]
     },
     {
       "name": "onratechange",
       "description": {
         "kind": "markdown",
         "value": "The playback rate has changed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onratechange"
+        }
+      ]
     },
     {
       "name": "onreadystatechange",
       "description": {
         "kind": "markdown",
         "value": "The readyState attribute of a document has changed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onreadystatechange"
+        }
+      ]
     },
     {
       "name": "onreset",
       "description": {
         "kind": "markdown",
         "value": "A form is reset."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onreset"
+        }
+      ]
     },
     {
       "name": "onresize",
       "description": {
         "kind": "markdown",
         "value": "The document view has been resized."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onresize"
+        }
+      ]
     },
     {
       "name": "onscroll",
       "description": {
         "kind": "markdown",
         "value": "The document view or an element has been scrolled."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onscroll"
+        }
+      ]
     },
     {
       "name": "onseeked",
       "description": {
         "kind": "markdown",
         "value": "A seek operation completed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onseeked"
+        }
+      ]
     },
     {
       "name": "onseeking",
       "description": {
         "kind": "markdown",
         "value": "A seek operation began."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onseeking"
+        }
+      ]
     },
     {
       "name": "onselect",
       "description": {
         "kind": "markdown",
         "value": "Some text is being selected."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onselect"
+        }
+      ]
     },
     {
       "name": "onshow",
       "description": {
         "kind": "markdown",
         "value": "A contextmenu event was fired on/bubbled to an element that has a contextmenu attribute"
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onshow"
+        }
+      ]
     },
     {
       "name": "onstalled",
       "description": {
         "kind": "markdown",
         "value": "The user agent is trying to fetch media data, but data is unexpectedly not forthcoming."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onstalled"
+        }
+      ]
     },
     {
       "name": "onsubmit",
       "description": {
         "kind": "markdown",
         "value": "A form is submitted."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onsubmit"
+        }
+      ]
     },
     {
       "name": "onsuspend",
       "description": {
         "kind": "markdown",
         "value": "Media data loading has been suspended."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onsuspend"
+        }
+      ]
     },
     {
       "name": "ontimeupdate",
       "description": {
         "kind": "markdown",
         "value": "The time indicated by the currentTime attribute has been updated."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ontimeupdate"
+        }
+      ]
     },
     {
       "name": "onvolumechange",
       "description": {
         "kind": "markdown",
         "value": "The volume has changed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onvolumechange"
+        }
+      ]
     },
     {
       "name": "onwaiting",
       "description": {
         "kind": "markdown",
         "value": "Playback has stopped because of a temporary lack of data."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onwaiting"
+        }
+      ]
     },
     {
       "name": "style",
-      "description": "It specifies style information for its element. It functions identically to the style attribute in HTML."
+      "description": "It specifies style information for its element. It functions identically to the style attribute in HTML.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/style"
+        }
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF1",
+        "FFA4",
+        "S1",
+        "SM1"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
+      }
     },
     {
       "name": "systemLanguage",
-      "description": "represents a list of supported language tags. This list is matched against the language defined in the user preferences."
+      "description": "represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/systemLanguage"
+        }
+      ]
     },
     {
       "name": "tabindex",
-      "description": "An integer attribute indicating if the element can take input focus (is _focusable_), if it should participate to sequential keyboard navigation, and if so, at what position."
+      "description": "An integer attribute indicating if the element can take input focus (is _focusable_), if it should participate to sequential keyboard navigation, and if so, at what position.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/tabindex"
+        }
+      ],
+      "browsers": [
+        "C1",
+        "CA18",
+        "E12",
+        "FF51",
+        "FFA51",
+        "S≤4",
+        "SM≤3.2"
+      ],
+      "status": {
+        "baseline": "high",
+        "baseline_low_date": "2017-01-24",
+        "baseline_high_date": "2019-07-24"
+      }
     }
   ]
 }

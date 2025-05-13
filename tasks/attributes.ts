@@ -1,6 +1,13 @@
 import { attribute } from "./utils";
 
 export const attributes = {
+  href: attribute("href", "The URL or URL fragment the hyperlink points to."),
+  offset: attribute("offset", "This attribute defines where the gradient stop is placed along the gradient vector."),
+  title: attribute("title", "This attribute is the title of the style sheet which can be used to switch between alternate style sheets."),
+  systemLanguage: attribute(
+    "systemLanguage",
+    "Represents a list of supported language tags. This list is matched against the language defined in the user preferences.",
+  ),
   crossorigin: attribute(
     "crossorigin",
     `provides support for CORS, defining how the element handles crossorigin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. It is a CORS settings attribute.`,
