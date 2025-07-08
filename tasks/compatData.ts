@@ -70,11 +70,11 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-      {
-        name: "MDN Reference",
-        url,
-      },
-    ]
+        {
+          name: "MDN Reference",
+          url,
+        },
+      ]
     : undefined;
 
 export const addCompatDataAttrs = (
