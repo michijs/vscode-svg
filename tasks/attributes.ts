@@ -72,7 +72,7 @@ export const attributes = {
   ),
   begin: attribute(
     "begin",
-    "Defines when an animation should begin or when an element should be discarded.",
+    "Defines when the associated element becomes active. For an animation element, this is the point at which the animation should begin.",
   ),
   by: attribute(
     "by",

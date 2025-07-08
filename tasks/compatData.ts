@@ -70,11 +70,11 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-        {
-          name: "MDN Reference",
-          url,
-        },
-      ]
+      {
+        name: "MDN Reference",
+        url,
+      },
+    ]
     : undefined;
 
 export const addCompatDataAttrs = (
@@ -127,6 +127,11 @@ export const addCompatData = (t: ITagData) => {
   }
 
   const bcdMatchingTag = bcdElements[t.name];
+  if (!bcdMatchingTag) {
+    console.log(`This element should be removed ${t.name}`);
+    return;
+  }
+
   t.references = mdnReference(
     bcdMatchingTag.__compat?.mdn_url ?? `${elementsMDN}/${t.name}`,
   );

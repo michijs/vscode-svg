@@ -131,11 +131,6 @@ const jsonData: HTMLDataV1 = {
       [],
     ),
     element(
-      "discard",
-      "allows authors to specify the time at which particular elements are to be discarded, thereby reducing the resources required by an SVG user agent. This is particularly useful to help SVG viewers conserve memory while displaying long-running documents.",
-      [attributes.begin, ...attributeSets.AnimationTargetElementAttributes],
-    ),
-    element(
       "ellipse",
       "The ellipse element is an SVG basic shape, used to create ellipses based on a center coordinate, and both their x and y radius.",
       [

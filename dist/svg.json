@@ -2339,7 +2339,7 @@
         },
         {
           "name": "begin",
-          "description": "Defines when an animation should begin or when an element should be discarded.",
+          "description": "Defines when the associated element becomes active. For an animation element, this is the point at which the animation should begin.",
           "references": [
             {
               "name": "MDN Reference",
@@ -2799,7 +2799,7 @@
         },
         {
           "name": "begin",
-          "description": "Defines when an animation should begin or when an element should be discarded.",
+          "description": "Defines when the associated element becomes active. For an animation element, this is the point at which the animation should begin.",
           "references": [
             {
               "name": "MDN Reference",
@@ -3355,7 +3355,7 @@
         },
         {
           "name": "begin",
-          "description": "Defines when an animation should begin or when an element should be discarded.",
+          "description": "Defines when the associated element becomes active. For an animation element, this is the point at which the animation should begin.",
           "references": [
             {
               "name": "MDN Reference",
@@ -10224,55 +10224,6 @@
         "baseline_low_date": "2015-07-29",
         "baseline_high_date": "2018-01-29"
       }
-    },
-    {
-      "name": "discard",
-      "description": {
-        "kind": "markdown",
-        "value": "allows authors to specify the time at which particular elements are to be discarded, thereby reducing the resources required by an SVG user agent. This is particularly useful to help SVG viewers conserve memory while displaying long-running documents."
-      },
-      "attributes": [
-        {
-          "name": "begin",
-          "description": "Defines when an animation should begin or when an element should be discarded.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin"
-            }
-          ]
-        },
-        {
-          "name": "href",
-          "description": "This attribute indicates the name of the attribute in the parent element that is going to be changed during an animation.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/href"
-            }
-          ],
-          "browsers": [
-            "C50",
-            "CA50",
-            "E12",
-            "FF1.5",
-            "FFA4",
-            "S12.1",
-            "SM12.2"
-          ],
-          "status": {
-            "baseline": "high",
-            "baseline_low_date": "2019-03-25",
-            "baseline_high_date": "2021-09-25"
-          }
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Element/discard"
-        }
-      ]
     },
     {
       "name": "ellipse",
@@ -82633,7 +82584,7 @@
         },
         {
           "name": "begin",
-          "description": "Defines when an animation should begin or when an element should be discarded.",
+          "description": "Defines when the associated element becomes active. For an animation element, this is the point at which the animation should begin.",
           "references": [
             {
               "name": "MDN Reference",
@@ -93948,15 +93899,11 @@
             "C1",
             "CA18",
             "E79",
-            "FF1.5",
-            "FFA4",
             "S3",
             "SM2"
           ],
           "status": {
-            "baseline": "high",
-            "baseline_low_date": "2020-01-15",
-            "baseline_high_date": "2022-07-15"
+            "baseline": false
           }
         },
         {
@@ -94717,15 +94664,11 @@
             "C1",
             "CA18",
             "E12",
-            "FF1.5",
-            "FFA4",
             "S3",
             "SM2"
           ],
           "status": {
-            "baseline": "high",
-            "baseline_low_date": "2015-07-29",
-            "baseline_high_date": "2018-01-29"
+            "baseline": false
           }
         },
         {
@@ -96638,15 +96581,11 @@
             "C1",
             "CA18",
             "E79",
-            "FF1.5",
-            "FFA4",
             "S3",
             "SM2"
           ],
           "status": {
-            "baseline": "high",
-            "baseline_low_date": "2020-01-15",
-            "baseline_high_date": "2022-07-15"
+            "baseline": false
           }
         },
         {
@@ -97457,15 +97396,11 @@
             "C1",
             "CA18",
             "E12",
-            "FF1.5",
-            "FFA4",
             "S3",
             "SM2"
           ],
           "status": {
-            "baseline": "high",
-            "baseline_low_date": "2015-07-29",
-            "baseline_high_date": "2018-01-29"
+            "baseline": false
           }
         },
         {
@@ -99407,15 +99342,11 @@
             "C1",
             "CA18",
             "E79",
-            "FF1.5",
-            "FFA4",
             "S3",
             "SM2"
           ],
           "status": {
-            "baseline": "high",
-            "baseline_low_date": "2020-01-15",
-            "baseline_high_date": "2022-07-15"
+            "baseline": false
           }
         },
         {
@@ -100176,15 +100107,11 @@
             "C1",
             "CA18",
             "E12",
-            "FF1.5",
-            "FFA4",
             "S3",
             "SM2"
           ],
           "status": {
-            "baseline": "high",
-            "baseline_low_date": "2015-07-29",
-            "baseline_high_date": "2018-01-29"
+            "baseline": false
           }
         },
         {
