@@ -4,7 +4,7 @@ import bcd, {
   type SupportBlock,
   type SupportStatement,
 } from "@mdn/browser-compat-data";
-// @ts-ignore
+// @ts-expect-error
 import { getStatus } from "compute-baseline";
 import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 import { attributeSets } from "./attributeSets";
@@ -12,7 +12,7 @@ import { attributeSets } from "./attributeSets";
 const namespace = "svg";
 export const featureBcd = bcd[namespace];
 export const bcdElements = featureBcd.elements;
-const baseMDN = `https://developer.mozilla.org/en-US/docs/Web/SVG`;
+const baseMDN = "https://developer.mozilla.org/en-US/docs/Web/SVG";
 const elementsMDN = `${baseMDN}/Element`;
 const attributesMDN = `${baseMDN}/Attribute`;
 
@@ -59,9 +59,8 @@ function supportToShortCompatString(
   if (version_added) {
     if (typeof version_added === "boolean") {
       return browserAbbrev;
-    } else {
-      return `${browserAbbrev}${version_added}`;
     }
+    return `${browserAbbrev}${version_added}`;
   }
 
   return "";
@@ -146,7 +145,7 @@ export const addCompatData = (t: ITagData) => {
     return;
   }
   t.browsers = getBrowserCompatString(status.support) as string[] | undefined;
-  // @ts-ignore
+  // @ts-expect-error
   delete status.support;
   t.status = status;
 
