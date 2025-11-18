@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/michijs/vscode-svg.git"
   },
-  "files": [
-    "dist/"
-  ],
   "galleryBanner": {
     "color": "#5663da",
     "theme": "dark"
