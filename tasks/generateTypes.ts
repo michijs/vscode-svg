@@ -923,13 +923,13 @@ const orderedAttributeSets = Object.fromEntries(
 );
 
 fs.writeFileSync(
-  "./dist/svg.json",
+  "./generated/svg.json",
   JSON.stringify(orderedData, null, 2),
   "utf-8",
 );
 
 fs.writeFileSync(
-  "./dist/attributeSets.json",
+  "./generated/attributeSets.json",
   JSON.stringify(orderedAttributeSets, null, 2),
   "utf-8",
 );

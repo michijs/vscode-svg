@@ -79,7 +79,7 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeType"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/attributeType"
         }
       ],
       "browsers": [
@@ -343,7 +343,7 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/From"
+          "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/from"
         }
       ],
       "browsers": [
@@ -393,7 +393,7 @@
       "browsers": [
         "C2",
         "CA18",
-        "E≤79",
+        "E12",
         "FF4",
         "FFA4",
         "S3",
@@ -401,8 +401,8 @@
       ],
       "status": {
         "baseline": "high",
-        "baseline_low_date": "≤2020-01-15",
-        "baseline_high_date": "≤2022-07-15"
+        "baseline_low_date": "2015-07-29",
+        "baseline_high_date": "2018-01-29"
       }
     },
     {
