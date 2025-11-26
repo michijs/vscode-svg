@@ -912,13 +912,16 @@ const orderedData: HTMLDataV1 = {
 };
 const orderedAttributeSets = Object.fromEntries(
   Object.entries(attributeSets)
-    .reduce((prevValue, [key, value]) => {
-      prevValue.push([
-        key,
-        value.sort((atA, atB) => atA.name.localeCompare(atB.name)),
-      ]);
-      return prevValue;
-    }, new Array<[string, IAttributeData[]]>())
+    .reduce(
+      (prevValue, [key, value]) => {
+        prevValue.push([
+          key,
+          value.sort((atA, atB) => atA.name.localeCompare(atB.name)),
+        ]);
+        return prevValue;
+      },
+      [] as [string, IAttributeData[]][],
+    )
     .sort(),
 );
 

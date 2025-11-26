@@ -119,17 +119,17 @@ export const attributes = {
       ...(() => {
         const amount = ["Min", "Mid", "Max"];
         const meetOrSlice = ["meet", "slice"];
-        const arrayWithX = new Array<string>();
+        const arrayWithX: string[] = [];
         amount.forEach((y) => {
           arrayWithX.push(`x${y}`);
         });
-        const arrayWithXAndY = new Array<string>();
+        const arrayWithXAndY: string[] = [];
         arrayWithX.forEach((x) => {
           amount.forEach((y) => {
             arrayWithXAndY.push(`${x}Y${y}`);
           });
         });
-        const finalArray = new Array<string>();
+        const finalArray: string[] = [];
         arrayWithXAndY.forEach((x) => {
           meetOrSlice.forEach((y) => {
             finalArray.push(`${x} ${y}`);
@@ -158,7 +158,7 @@ export const attributes = {
         `${currentValue} meet`,
         `${currentValue} slice`,
       );
-    }, new Array<string>()),
+    }, [] as string[]),
   ),
   rotate: attribute(
     "rotate",
