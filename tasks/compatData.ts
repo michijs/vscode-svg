@@ -4,7 +4,7 @@ import bcd, {
   type SimpleSupportStatement,
   type SupportBlock,
   type SupportStatement,
-type VersionValue,
+  type VersionValue,
 } from "@mdn/browser-compat-data";
 // @ts-ignore
 import { getStatus } from "compute-baseline";
@@ -14,7 +14,7 @@ import { attributeSets } from "./attributeSets";
 const namespace = "svg";
 export const featureBcd = bcd[namespace];
 export const bcdElements = featureBcd.elements;
-const baseMDN = `https://developer.mozilla.org/en-US/docs/Web/SVG`;
+const baseMDN = "https://developer.mozilla.org/en-US/docs/Web/SVG";
 const elementsMDN = `${baseMDN}/Element`;
 const attributesMDN = `${baseMDN}/Attribute`;
 
@@ -60,9 +60,8 @@ function supportToShortCompatString(
   if (version_added) {
     if (typeof version_added === "boolean") {
       return browserAbbrev;
-    } else {
-      return `${browserAbbrev}${version_added}`;
     }
+    return `${browserAbbrev}${version_added}`;
   }
 
   return "";
