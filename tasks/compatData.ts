@@ -12,7 +12,7 @@ import { attributeSets } from "./attributeSets";
 
 const namespace = "svg";
 export const featureBcd = bcd[namespace];
-export const bcdElements = featureBcd.elements;
+export const bcdElements = featureBcd.elements!;
 const baseMDN = "https://developer.mozilla.org/en-US/docs/Web/SVG";
 const elementsMDN = `${baseMDN}/Element`;
 const attributesMDN = `${baseMDN}/Attribute`;
@@ -87,13 +87,13 @@ export const addCompatDataAttrs = (
       bcdMatchingAttr: Identifier | undefined;
     if (t) {
       attributeNamespace = `elements.${t.name}`;
-      bcdMatchingAttr = bcdElements[t.name][a.name];
+      bcdMatchingAttr = bcdElements[t.name]?.[a.name];
     }
     if (!bcdMatchingAttr) {
       attributeNamespace = "global_attributes";
       bcdMatchingAttr =
-        featureBcd.global_attributes[a.name] ??
-        bcd.html.global_attributes[a.name];
+        featureBcd.global_attributes?.[a.name] ??
+        bcd.html.global_attributes?.[a.name];
     }
     a.references =
       a.references ??
@@ -185,7 +185,7 @@ export const lookForDeprecatedTags = (tags: ITagData[]) => {
 };
 
 export const lookForMissingAttributes = (t: ITagData) => {
-  const missingAttrs = Object.entries(bcdElements[t.name])
+  const missingAttrs = Object.entries(bcdElements[t.name]!)
     .filter(([x, attribute]) => {
       return (
         x !== "__compat" &&
@@ -205,7 +205,7 @@ export const lookForDeprecatedAttributes = (t: ITagData) => {
   const allAttributesFromSets = Object.values(attributeSets).flat();
   const deprecatedAttrs = t.attributes
     .filter((x) => {
-      const attributeFound = bcdElements[t.name][x.name];
+      const attributeFound = bcdElements[t.name]?.[x.name];
       return (
         (!attributeFound ||
           attributeFound.__compat?.status?.deprecated === true) &&
