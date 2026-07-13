@@ -13,7 +13,7 @@
     "declaration": true,
     "experimentalDecorators": true,
     "noErrorTruncation": true,
-    "types":["@types/bun"],
+    "types": ["@types/bun"],
     "lib": ["dom", "esnext"],
     "incremental": false,
     "outDir": "bin",

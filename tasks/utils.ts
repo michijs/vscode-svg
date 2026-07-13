@@ -1,4 +1,8 @@
-import type { IAttributeData, ITagData, MarkupContent } from "vscode-html-languageservice";
+import type {
+  IAttributeData,
+  ITagData,
+  MarkupContent,
+} from "vscode-html-languageservice";
 
 export const attribute = (
   name: string,
