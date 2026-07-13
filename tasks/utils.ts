@@ -1,4 +1,4 @@
-import type { IAttributeData, ITagData } from "vscode-html-languageservice";
+import type { IAttributeData, ITagData, MarkupContent } from "vscode-html-languageservice";
 
 export const attribute = (
   name: string,
@@ -16,7 +16,7 @@ export const attribute = (
 });
 export const element = (
   name: string,
-  description,
+  description: string | MarkupContent | undefined,
   attributes: IAttributeData[] = [],
 ): ITagData => ({
   name,

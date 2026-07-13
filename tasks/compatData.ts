@@ -6,7 +6,6 @@ import bcd, {
   type SupportStatement,
   type VersionValue,
 } from "@mdn/browser-compat-data";
-// @ts-ignore
 import { getStatus } from "compute-baseline";
 import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 import { attributeSets } from "./attributeSets";
@@ -42,7 +41,7 @@ function getBrowserCompatString(support: SupportBlock) {
     return;
   }
   return Object.entries(support).map(([browser, version_added]) => {
-    const abbreviation = BaselineBrowserAbbreviations[browser];
+    const abbreviation = BaselineBrowserAbbreviations[browser as keyof typeof BaselineBrowserAbbreviations];
     return supportToShortCompatString(version_added, abbreviation);
   });
 }

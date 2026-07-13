@@ -544,10 +544,13 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/download"
+              "url": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/download"
             }
           ],
           "browsers": [
+            "",
+            "",
+            "",
             "",
             ""
           ],
@@ -848,7 +851,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -1226,8 +1231,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -5288,7 +5294,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -5591,8 +5599,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -7245,7 +7254,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -7548,8 +7559,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -9126,7 +9138,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -9429,8 +9443,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -11730,7 +11745,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -12033,8 +12050,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -13679,7 +13697,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -14094,8 +14114,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -15833,7 +15854,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -16204,8 +16227,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -17964,7 +17988,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -18335,8 +18361,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -20033,7 +20060,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -20544,8 +20573,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -22362,7 +22392,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -22780,8 +22812,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -24606,7 +24639,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -25000,8 +25035,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -26722,7 +26758,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -27137,8 +27175,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -29060,7 +29099,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -29431,8 +29472,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -31153,7 +31195,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -31480,8 +31524,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -33590,7 +33635,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -33961,8 +34008,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -35178,8 +35226,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-11"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-11",
+            "baseline_high_date": "2026-06-11"
           }
         },
         {
@@ -35707,7 +35756,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -36058,8 +36109,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -37839,7 +37891,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -38166,8 +38220,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -39937,7 +39992,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -40308,8 +40365,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -42122,7 +42180,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -42493,8 +42553,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -44364,7 +44425,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -44758,8 +44821,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -46821,7 +46885,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -47192,8 +47258,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -48914,7 +48981,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -49241,8 +49310,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -52055,7 +52125,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -52382,8 +52454,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -54689,7 +54762,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -54992,8 +55067,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -56075,8 +56151,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-11"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-11",
+            "baseline_high_date": "2026-06-11"
           }
         },
         {
@@ -56635,7 +56712,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -57010,8 +57089,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -59534,7 +59614,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -59837,8 +59919,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -61531,7 +61614,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -61914,8 +61999,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -64246,7 +64332,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -64629,8 +64717,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -66372,7 +66461,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -66699,8 +66790,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -69165,7 +69257,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -69468,8 +69562,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -71066,7 +71161,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -71417,8 +71514,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -73909,7 +74007,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -74212,8 +74312,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -76481,7 +76582,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -76784,8 +76887,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -78454,7 +78558,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -78909,8 +79015,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -81179,7 +81286,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -81506,8 +81615,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -82441,8 +82551,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-11"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-11",
+            "baseline_high_date": "2026-06-11"
           }
         },
         {
@@ -83634,7 +83745,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -83937,8 +84050,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -86264,7 +86378,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -86591,8 +86707,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -88373,7 +88490,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -88676,8 +88795,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -90901,7 +91021,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -91228,8 +91350,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -93714,7 +93837,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -94045,8 +94170,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -96372,7 +96498,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -96727,8 +96855,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -99157,7 +99286,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -99488,8 +99619,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
@@ -101855,7 +101987,9 @@
             ""
           ],
           "status": {
-            "baseline": false
+            "baseline": "high",
+            "baseline_low_date": "2017-09-19",
+            "baseline_high_date": "2020-03-19"
           }
         },
         {
@@ -102206,8 +102340,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-12-07"
+            "baseline": "high",
+            "baseline_low_date": "2023-12-07",
+            "baseline_high_date": "2026-06-07"
           }
         },
         {
