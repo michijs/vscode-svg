@@ -41,7 +41,10 @@ function getBrowserCompatString(support: SupportBlock) {
     return;
   }
   return Object.entries(support).map(([browser, version_added]) => {
-    const abbreviation = BaselineBrowserAbbreviations[browser as keyof typeof BaselineBrowserAbbreviations];
+    const abbreviation =
+      BaselineBrowserAbbreviations[
+        browser as keyof typeof BaselineBrowserAbbreviations
+      ];
     return supportToShortCompatString(version_added, abbreviation);
   });
 }
